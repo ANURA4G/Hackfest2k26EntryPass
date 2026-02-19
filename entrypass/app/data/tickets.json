@@ -2817,6 +2817,331 @@
             "food_preference": "4 members - Non-Veg",
             "created_at": "2026-02-19T18:16:02.165653",
             "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "9AB95BD4",
+            "user_id": "MOCK01",
+            "team_name": "Pixel Pioneers",
+            "college_name": "Anna University",
+            "team_leader_email": "pixel.pioneers@test.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Arjun Mehta",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Kavitha Rajan",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Deepak Kumar",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5QUI5NUJENCIsInVzZXJfaWQiOiJNT0NLMDEiLCJ0ZWFtX25hbWUiOiJQaXhlbCBQaW9uZWVycyIsInRpbWVzdGFtcCI6MTc3MTUwNzc3MCwic2lnbmF0dXJlIjoiMWM1ODMyOTI2NWI0NmY2OWE1ZmE2MjFjOWZhMzQ5MDZjYjc0ODc4ZDM0NTcyZDkyMTBkOTQwYWM1YjQyYmQwZiJ9",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "38F94AA1",
+            "user_id": "MOCK02",
+            "team_name": "ByteForce",
+            "college_name": "VIT Vellore",
+            "team_leader_email": "byteforce@test.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Rahul Sharma",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Priya Nair",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Anil Patel",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Sneha Iyer",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzOEY5NEFBMSIsInVzZXJfaWQiOiJNT0NLMDIiLCJ0ZWFtX25hbWUiOiJCeXRlRm9yY2UiLCJ0aW1lc3RhbXAiOjE3NzE1MDc3NzAsInNpZ25hdHVyZSI6IjBjNDg1MmJmMTJjMzRjN2E4NmQ3ZTFjZTJiYzVlZDM0ZTk4MjE3NGU4MTczZGI4YzA3ZmNhZjBkNjkxMWIxOWEifQ==",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "F024C06F",
+            "user_id": "MOCK03",
+            "team_name": "NeonStack",
+            "college_name": "SRM Institute",
+            "team_leader_email": "neonstack@test.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Vikram Singh",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Ananya Das",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Rohan Gupta",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJGMDI0QzA2RiIsInVzZXJfaWQiOiJNT0NLMDMiLCJ0ZWFtX25hbWUiOiJOZW9uU3RhY2siLCJ0aW1lc3RhbXAiOjE3NzE1MDc3NzAsInNpZ25hdHVyZSI6IjUxODU2NWY2NzAzYmNiNDY2ZmFiZTVhMWNkOGY1OGNmMzVlNWEzODFkNWRlYWJiMDFkMDNlNzhkN2E2NDg2ZTIifQ==",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "8A1A5F55",
+            "user_id": "MOCK04",
+            "team_name": "CipherSquad",
+            "college_name": "PSG Tech Coimbatore",
+            "team_leader_email": "ciphersquad@test.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Karthik Ravi",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Divya Mohan",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Suresh Babu",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Lakshmi Priya",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4QTFBNUY1NSIsInVzZXJfaWQiOiJNT0NLMDQiLCJ0ZWFtX25hbWUiOiJDaXBoZXJTcXVhZCIsInRpbWVzdGFtcCI6MTc3MTUwNzc3MCwic2lnbmF0dXJlIjoiY2JmYjc0MmJiOWZhODI2MjQ4ZGMwNWVjMzY1ZTJjN2I2NTZhMTFmMGVhNjBhNDBhOWI4MWM2ZjczMjBhOTIzNSJ9",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "8CBED50B",
+            "user_id": "MOCK05",
+            "team_name": "Debug Dynasty",
+            "college_name": "NIT Trichy",
+            "team_leader_email": "debugdynasty@test.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Arun Prakash",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Meena Kumari",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sanjay Reddy",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4Q0JFRDUwQiIsInVzZXJfaWQiOiJNT0NLMDUiLCJ0ZWFtX25hbWUiOiJEZWJ1ZyBEeW5hc3R5IiwidGltZXN0YW1wIjoxNzcxNTA3NzcwLCJzaWduYXR1cmUiOiI3ODYwMzFlN2YzZjE0NGFjNzVmZjdlM2MwOTNlNDM3MWE2OWMxNTk2OTRhYWM0MDE2OTg0MjEyMDg1NzkzMDAxIn0=",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "D1C81B10",
+            "user_id": "MOCK06",
+            "team_name": "CloudChasers",
+            "college_name": "SSN College of Engineering",
+            "team_leader_email": "cloudchasers@test.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Harish Kumar",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Fathima Banu",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Naveen Raj",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Pooja Srinivasan",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEMUM4MUIxMCIsInVzZXJfaWQiOiJNT0NLMDYiLCJ0ZWFtX25hbWUiOiJDbG91ZENoYXNlcnMiLCJ0aW1lc3RhbXAiOjE3NzE1MDc3NzAsInNpZ25hdHVyZSI6IjUxNWFkNTQxOGJiMTQ4MThjMTIwYTY2NjBhNmRiOTg5YmZiZDNhYjYyZDA5NDU5YzlkMmM1NzNiOWRjNTgxNmYifQ==",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "E68858A9",
+            "user_id": "MOCK07",
+            "team_name": "KernelPanic",
+            "college_name": "Amrita Vishwa Vidyapeetham",
+            "team_leader_email": "kernelpanic@test.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Ganesh Venkat",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Swathi Krishnan",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Manoj Kumar",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJFNjg4NThBOSIsInVzZXJfaWQiOiJNT0NLMDciLCJ0ZWFtX25hbWUiOiJLZXJuZWxQYW5pYyIsInRpbWVzdGFtcCI6MTc3MTUwNzc3MCwic2lnbmF0dXJlIjoiYjIzYjA0YTAzN2ZlYjYxNTNlNGE3MzgxNjBhMGNlYmEwNWZlZDZhNjhkZGMwNGUyY2ZlZWMyYTNkNDc4MWJlNiJ9",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "5715E560",
+            "user_id": "MOCK08",
+            "team_name": "Algo Aces",
+            "college_name": "Thiagarajar College of Engineering",
+            "team_leader_email": "algoaces@test.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Rajesh Kannan",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Bhavani Devi",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Prasanth Mani",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Vignesh Selvam",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI1NzE1RTU2MCIsInVzZXJfaWQiOiJNT0NLMDgiLCJ0ZWFtX25hbWUiOiJBbGdvIEFjZXMiLCJ0aW1lc3RhbXAiOjE3NzE1MDc3NzAsInNpZ25hdHVyZSI6IjI3NDhjOTI5YWYzMTIyN2VmNDMyNmQ3OWZlZDk4YTNjOTVhMDBkNDlhNDNkYTA5YWVhNGM0OWY4MjE0MDczMmQifQ==",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "FD7B4A66",
+            "user_id": "MOCK09",
+            "team_name": "SyntaxStorm",
+            "college_name": "Kongu Engineering College",
+            "team_leader_email": "syntaxstorm@test.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Dinesh Raj",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Sangeetha Vel",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Ashwin Kumar",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJGRDdCNEE2NiIsInVzZXJfaWQiOiJNT0NLMDkiLCJ0ZWFtX25hbWUiOiJTeW50YXhTdG9ybSIsInRpbWVzdGFtcCI6MTc3MTUwNzc3MCwic2lnbmF0dXJlIjoiYTY1MDUwOGI0YmMyMzg1ZDEyOTAyZWU2NDJlYzIyNGQ2YjEzNjE3OWI4MjhjMjhkZWM3YjM3ZTUzYzlmNzczOCJ9",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "8624E1F6",
+            "user_id": "MOCK10",
+            "team_name": "ZeroBug",
+            "college_name": "Kumaraguru College of Technology",
+            "team_leader_email": "zerobug@test.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Balaji Murugan",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Janani Ramesh",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sathish Pandian",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Revathi Subramaniam",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4NjI0RTFGNiIsInVzZXJfaWQiOiJNT0NLMTAiLCJ0ZWFtX25hbWUiOiJaZXJvQnVnIiwidGltZXN0YW1wIjoxNzcxNTA3NzcwLCJzaWduYXR1cmUiOiJkYmU3ZTQ2NDUyOGVjMjI0ZjcwMWRhNzM3ZjQ1ZTBjOTA3NjAzMGU2ZGM3NDIwNDA3OTU3ODcwOTk0N2JmYTVmIn0=",
+            "created_at": "2026-02-19T18:00:00.000000",
+            "created_by": "admin"
         }
     ]
 }

@@ -5,53 +5,58 @@ Vercel Serverless Handler
 This module adapts the Flask application for Vercel's serverless environment.
 
 Responsibilities:
+- Set up sys.path so bare imports inside app.py work correctly
 - Import the Flask app from app.py
-- Expose the app as a WSGI-compatible handler for Vercel
-- Handle serverless function invocation
-- Provide error handling for debugging
+- Expose the WSGI application as ``app`` for @vercel/python
 
 Important Notes:
-- Vercel uses ephemeral filesystem - JSON data resets on each deploy
+- Vercel uses ephemeral filesystem – JSON data resets on cold starts
 - Cold starts may affect initial response times
 - All routes are handled through this single serverless function
-
-Usage:
 - vercel.json points to this file as the handler
-- No modifications needed for deployment
 """
 
 import sys
+import os
 import traceback
 
+# ---------------------------------------------------------------------------
+# PATH SETUP – Vercel's Python runtime puts the *project root* on sys.path.
+# The Flask app (app.py) uses bare imports such as
+#     from routes.auth import auth_bp
+#     from utils.json_store import ...
+# These resolve only when the ``app/`` directory itself is on sys.path.
+# ---------------------------------------------------------------------------
+_app_dir = os.path.dirname(os.path.abspath(__file__))
+if _app_dir not in sys.path:
+    sys.path.insert(0, _app_dir)
+
 try:
+    # ``app.py`` is in the same directory; this import gets the Flask instance
     from app import app
-    
-    # Expose app for Vercel's WSGI handler
-    # Vercel will import this as the application handler
+
+    # Vercel @vercel/python runtime looks for a variable named ``app``
+    # (WSGI callable).  We also expose ``application`` and ``handler``
+    # for compatibility.
     application = app
-    
-    # For Vercel serverless functions
     handler = app
-    
-    # Add a test route for debugging
-    @app.route('/test')
-    def test():
-        return {"status": "ok", "message": "Vercel handler working"}
-        
+
 except Exception as e:
-    # Create a simple error app if main app fails
+    # Fallback: surface the import error so it's easy to debug on Vercel
     from flask import Flask
-    
-    error_app = Flask(__name__)
-    
-    @error_app.route('/')
-    def error():
+
+    _err_app = Flask(__name__)
+
+    @_err_app.route("/", defaults={"path": ""})
+    @_err_app.route("/<path:path>")
+    def _error(path):
         return {
             "error": "Application failed to import",
             "message": str(e),
             "traceback": traceback.format_exc(),
-            "python_path": sys.path
-        }
-    
-    application = error_app
-    handler = error_app
+            "python_path": sys.path,
+        }, 500
+
+    app = _err_app
+    application = _err_app
+    handler = _err_app
