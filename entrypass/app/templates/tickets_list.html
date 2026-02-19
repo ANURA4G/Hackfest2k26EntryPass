@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+
+{% block title %}All Teams - HACKFEST2K26{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-8">
+        <div>
+            <a href="/admin/dashboard"
+                class="text-gray-400 hover:text-white transition text-sm inline-flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Dashboard
+            </a>
+            <h1 class="text-2xl font-bold text-white mt-2">All Registrations</h1>
+            <p class="text-gray-400"><span id="ticket-count">{{ tickets|length }}</span> teams registered</p>
+        </div>
+        <div class="flex gap-3">
+            {% if tickets|length > 0 %}
+            <form method="POST" action="/admin/tickets/clear-all"
+                onsubmit="return confirm('⚠️ WARNING: This will delete ALL teams, users, QR codes, and PDFs. This action CANNOT be undone. Are you absolutely sure?');"
+                style="display: inline;">
+                <button type="submit"
+                    class="px-4 py-2 bg-red-500/20 text-red-400 rounded-lg hover:bg-red-500/30 border border-red-500/30">
+                    🗑️ Clear All
+                </button>
+            </form>
+            {% endif %}
+            <a href="/admin/tickets/create" class="px-4 py-2 btn-primary-custom rounded-lg">
+                + Create New
+            </a>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="glass rounded-xl p-4 mb-6">
+        <div class="flex flex-wrap gap-4 items-center">
+            <div class="flex-1 min-w-[250px]">
+                <input type="text" id="search-input"
+                    placeholder="🔍 Search by team name, team code (HF26XXXXX), college, email..."
+                    class="w-full px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500">
+            </div>
+
+            <select id="status-filter"
+                class="px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-indigo-500">
+                <option value="all">All Status</option>
+                <option value="attended">✓ Attended</option>
+                <option value="pending">⏳ Pending</option>
+            </select>
+
+            <button id="clear-filters" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white text-sm">
+                Clear
+            </button>
+
+            <button onclick="exportToCSV()"
+                class="px-4 py-2 bg-green-500/20 text-green-400 rounded-lg hover:bg-green-500/30 text-sm border border-green-500/30">
+                📊 Export CSV
+            </button>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="glass rounded-xl overflow-hidden">
+        <table class="w-full table-dark-custom">
+            <thead>
+                <tr>
+                    <th class="text-left py-4 px-6">Team Name</th>
+                    <th class="text-left py-4 px-6">Team Code</th>
+                    <th class="text-left py-4 px-6">College</th>
+                    <th class="text-left py-4 px-6">Email</th>
+                    <th class="text-left py-4 px-6">Size</th>
+                    <th class="text-left py-4 px-6">Team Members</th>
+                    <th class="text-left py-4 px-6">Status</th>
+                    <th class="text-left py-4 px-6">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tickets-tbody">
+                {% if tickets %}
+                {% for ticket in tickets %}
+                <tr class="ticket-row border-b border-gray-800" data-team-name="{{ ticket.team_name|lower }}"
+                    data-team-code="{{ ticket.user_id|lower }}" data-college="{{ ticket.college_name|lower }}"
+                    data-email="{{ ticket.team_leader_email|lower }}" data-ticket-id="{{ ticket.ticket_id|lower }}"
+                    data-status="{{ ticket.attendance_status|lower }}" data-size="{{ ticket.team_size }}">
+                    <td class="py-4 px-6 font-medium text-white">{{ ticket.team_name }}</td>
+                    <td class="py-4 px-6 font-mono text-sm text-indigo-400 font-bold">{{ ticket.user_id }}</td>
+                    <td class="py-4 px-6 text-sm text-gray-400">{{ ticket.college_name }}</td>
+                    <td class="py-4 px-6 text-sm text-gray-400">{{ ticket.team_leader_email }}</td>
+                    <td class="py-4 px-6 text-sm text-gray-400">{{ ticket.team_size }}</td>
+                    <td class="py-4 px-6 text-sm text-gray-400">
+                        {% if ticket.team_members %}
+                        <div class="space-y-1">
+                            {% for member in ticket.team_members %}
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gray-500 rounded-full"></span>
+                                <span>{{ member.name }}</span>
+                                {% if member.position == 'Team Leader' %}
+                                <span class="text-xs text-indigo-400">(Leader)</span>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                        <span class="text-gray-500">-</span>
+                        {% endif %}
+                    </td>
+                    <td class="py-4 px-6">
+                        {% if ticket.attendance_status == 'Present' %}
+                        <span class="px-2 py-1 rounded-full text-xs badge-success">✓ Attended</span>
+                        {% else %}
+                        <span class="px-2 py-1 rounded-full text-xs badge-warning">⏳ Pending</span>
+                        {% endif %}
+                    </td>
+                    <td class="py-4 px-6">
+                        <div class="flex gap-2 flex-wrap">
+                            <a href="/admin/tickets/{{ ticket.ticket_id }}/pdf"
+                                class="px-3 py-1.5 text-xs bg-indigo-500/20 text-indigo-400 rounded hover:bg-indigo-500/30 border border-indigo-500/30"
+                                title="Download PDF">📄 PDF</a>
+                            <a href="/admin/tickets/{{ ticket.ticket_id }}/qr"
+                                class="px-3 py-1.5 text-xs bg-purple-500/20 text-purple-400 rounded hover:bg-purple-500/30 border border-purple-500/30"
+                                title="Download QR">📱 QR</a>
+                            <form method="POST" action="/admin/tickets/{{ ticket.ticket_id }}/delete"
+                                onsubmit="return confirm('Delete team \'{{ ticket.team_name }}\'? This will remove all associated data.');"
+                                style="display: inline;">
+                                <button type="submit"
+                                    class="px-3 py-1.5 text-xs bg-red-500/20 text-red-400 rounded hover:bg-red-500/30 border border-red-500/30"
+                                    title="Delete Team">🗑️ Delete</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr id="no-results">
+                    <td colspan="8" class="py-12 text-center text-gray-500">
+                        <div class="text-4xl mb-4">📋</div>
+                        <p class="text-lg">No teams registered yet</p>
+                        <a href="/admin/tickets/create"
+                            class="text-indigo-400 hover:text-indigo-300 mt-2 inline-block">Create your first team →</a>
+                    </td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Stats Footer -->
+    {% if tickets|length > 0 %}
+    <div class="mt-6 glass rounded-xl p-4">
+        <div class="flex justify-between items-center text-sm">
+            <div class="text-gray-400">
+                Total: <span class="text-white font-bold">{{ tickets|length }}</span> teams
+            </div>
+            <div class="text-gray-400">
+                Attended: <span class="text-green-400 font-bold">{{ tickets|selectattr('attendance_status', 'equalto',
+                    'Present')|list|length }}</span> |
+                Pending: <span class="text-yellow-400 font-bold">{{ tickets|rejectattr('attendance_status', 'equalto',
+                    'Present')|list|length }}</span>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+    // Search and filter functionality
+    const searchInput = document.getElementById('search-input');
+    const statusFilter = document.getElementById('status-filter');
+    const ticketRows = document.querySelectorAll('.ticket-row');
+    const ticketCount = document.getElementById('ticket-count');
+
+    function filterTickets() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const statusValue = statusFilter.value;
+        let visibleCount = 0;
+
+        ticketRows.forEach(row => {
+            const teamName = row.dataset.teamName;
+            const teamCode = row.dataset.teamCode;
+            const college = row.dataset.college;
+            const email = row.dataset.email;
+            const ticketId = row.dataset.ticketId;
+            const status = row.dataset.status;
+
+            const matchesSearch = teamName.includes(searchTerm) ||
+                teamCode.includes(searchTerm) ||
+                college.includes(searchTerm) ||
+                email.includes(searchTerm) ||
+                ticketId.includes(searchTerm);
+            const matchesStatus = statusValue === 'all' ||
+                (statusValue === 'attended' && status.includes('present')) ||
+                (statusValue === 'pending' && !status.includes('present'));
+
+            if (matchesSearch && matchesStatus) {
+                row.style.display = '';
+                visibleCount++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+
+        ticketCount.textContent = visibleCount;
+    }
+
+    searchInput.addEventListener('input', filterTickets);
+    statusFilter.addEventListener('change', filterTickets);
+
+    document.getElementById('clear-filters').addEventListener('click', () => {
+        searchInput.value = '';
+        statusFilter.value = 'all';
+        filterTickets();
+    });
+
+    // Export to CSV
+    function exportToCSV() {
+        const rows = [['Team Name', 'Team Code', 'College', 'Email', 'Size', 'Status']];
+
+        ticketRows.forEach(row => {
+            if (row.style.display !== 'none') {
+                const cells = row.querySelectorAll('td');
+                rows.push([
+                    cells[0].textContent.trim(),
+                    cells[1].textContent.trim(),
+                    cells[2].textContent.trim(),
+                    cells[3].textContent.trim(),
+                    cells[4].textContent.trim(),
+                    cells[5].textContent.trim()
+                ]);
+            }
+        });
+
+        const csv = rows.map(row => row.map(cell => `"${cell}"`).join(',')).join('\n');
+        const blob = new Blob([csv], { type: 'text/csv' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `hackfest2k26_teams_${new Date().toISOString().split('T')[0]}.csv`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+    }
+
+    // Auto-refresh counter on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('✅ Admin panel loaded with {{ tickets|length }} teams');
+    });
+</script>
+
+<style>
+    .table-dark-custom tbody tr:hover {
+        background-color: rgba(99, 102, 241, 0.05);
+    }
+
+    @media print {
+
+        .glass,
+        button,
+        form,
+        a[href*="delete"] {
+            display: none !important;
+        }
+    }
+</style>
+{% endblock %}

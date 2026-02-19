@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}Pass Created - HACKFEST2K26{% endblock %}
+
+{% block content %}
+<div class="max-w-xl mx-auto px-4 py-8">
+    <!-- Success Header -->
+    <div class="text-center mb-8">
+        <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+        <h1 class="text-2xl font-bold text-white">Entry Pass Created</h1>
+        <p class="text-gray-400 mt-1">{{ ticket.team_name }}</p>
+    </div>
+
+    <!-- Ticket Details Card -->
+    <div class="glass rounded-xl p-6 mb-6">
+        <h2 class="text-sm font-medium text-gray-400 mb-4">TICKET DETAILS</h2>
+
+        <div class="space-y-4">
+            <div class="flex justify-between items-center py-3 border-b border-white/10">
+                <span class="text-gray-400">Ticket ID</span>
+                <span class="text-white font-mono font-bold">{{ ticket.ticket_id }}</span>
+            </div>
+
+            <div class="bg-indigo-500/10 rounded-lg p-4 border border-indigo-500/30">
+                <div class="flex justify-between items-center">
+                    <span class="text-indigo-400 text-sm">Team Code</span>
+                    <span class="text-indigo-300 font-mono font-bold text-xl">{{ ticket.user_id }}</span>
+                </div>
+                <p class="text-indigo-500/70 text-xs mt-2">Unique identifier for this team</p>
+            </div>
+
+            <div class="flex justify-between items-center py-3 border-b border-white/10">
+                <span class="text-gray-400">College</span>
+                <span class="text-white">{{ ticket.college_name }}</span>
+            </div>
+
+            <div class="flex justify-between items-center py-3 border-b border-white/10">
+                <span class="text-gray-400">Team Leader Email</span>
+                <span class="text-white">{{ ticket.team_leader_email }}</span>
+            </div>
+            {% if ticket.team_members %}
+            <div class="py-3 border-b border-white/10">
+                <span class="text-gray-400 block mb-3">Team Members</span>
+                <div class="space-y-2">
+                    {% for member in ticket.team_members %}
+                    <div class="flex items-center justify-between bg-white/5 rounded p-2">
+                        <span class="text-white">{{ member.name }}</span>
+                        {% if member.position == 'Team Leader' %}
+                        <span class="text-xs text-indigo-400 bg-indigo-500/20 px-2 py-1 rounded">Leader</span>
+                        {% else %}
+                        <span class="text-xs text-gray-400">{{ member.position }}</span>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <div class="flex justify-between items-center py-3 border-b border-white/10">
+                <span class="text-gray-400">Event Schedule</span>
+                <span class="text-white text-sm">{{ ticket.slot }}</span>
+            </div>
+
+            {% if ticket.team_members %}
+            <div class="py-3">
+                <span class="text-gray-400 block mb-3">Team Members</span>
+                <div class="space-y-2">
+                    {% for member in ticket.team_members %}
+                    <div class="flex items-center gap-3 py-2 px-3 bg-white/5 rounded-lg">
+                        <div class="w-2 h-2 bg-indigo-400 rounded-full"></div>
+                        <span class="text-white flex-1">{{ member.name }}</span>
+                        {% if member.position == 'Team Leader' %}
+                        <span class="text-xs text-indigo-400 bg-indigo-500/20 px-2 py-1 rounded">Leader</span>
+                        {% else %}
+                        <span class="text-xs text-gray-500">{{ member.position }}</span>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Downloads -->
+    <div class="grid grid-cols-2 gap-4 mb-6">
+        <a href="/admin/tickets/{{ ticket.ticket_id }}/qr" class="glass rounded-xl p-4 text-center card-hover block">
+            <svg class="w-8 h-8 text-indigo-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+            </svg>
+            <span class="text-white text-sm">QR Code</span>
+        </a>
+
+        <a href="/admin/tickets/{{ ticket.ticket_id }}/pdf" class="glass rounded-xl p-4 text-center card-hover block">
+            <svg class="w-8 h-8 text-pink-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+            <span class="text-white text-sm">Entry Pass PDF</span>
+        </a>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex gap-4">
+        <a href="/admin/tickets/create" class="flex-1 py-3 btn-primary-custom rounded-lg text-center">
+            Create Another
+        </a>
+        <a href="/admin/tickets"
+            class="flex-1 py-3 glass rounded-lg text-center text-white hover:bg-white/10 transition">
+            View All
+        </a>
+    </div>
+</div>
+{% endblock %}

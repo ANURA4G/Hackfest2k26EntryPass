@@ -1,0 +1,9 @@
+# QR Code Images Directory
+# =========================
+# 
+# This directory stores generated QR code images for tickets.
+# 
+# File naming convention: {ticket_id}.png
+# 
+# Note: On Vercel, this directory is ephemeral and will be
+# cleared on each deployment. QR codes are regenerated on demand.

@@ -1,0 +1,455 @@
+{% extends "base.html" %}
+
+{% block title %}QR Scanner - HACKFEST2K26{% endblock %}
+
+{% block extra_head %}
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<style>
+    #reader { width: 100%; max-width: 500px; margin: 0 auto; }
+    #reader video { border-radius: 12px; }
+    #reader__scan_region { border-radius: 12px; overflow: hidden; }
+    #reader__dashboard { padding: 10px 0; }
+    #reader__dashboard button {
+        background: linear-gradient(135deg, #6366f1, #ec4899) !important;
+        color: white !important; border: none !important;
+        padding: 12px 24px !important; border-radius: 8px !important;
+        font-weight: 600 !important; cursor: pointer !important;
+    }
+    #reader__dashboard select {
+        background: rgba(255,255,255,0.1) !important; color: white !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
+        padding: 8px 12px !important; border-radius: 6px !important;
+    }
+    .member-label { transition: all 0.2s ease; }
+    .member-label.checked { background: rgba(34,197,94,0.12) !important; border-color: rgba(34,197,94,0.5) !important; }
+    .member-label.unchecked { background: rgba(239,68,68,0.08) !important; border-color: rgba(239,68,68,0.3) !important; }
+    .member-label.checked .status-badge { background: rgba(34,197,94,0.2); color: #22c55e; }
+    .member-label.unchecked .status-badge { background: rgba(239,68,68,0.2); color: #ef4444; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto px-4 py-8">
+    <!-- Header -->
+    <div class="mb-8 text-center">
+        <h1 class="text-2xl font-bold text-white">QR Scanner</h1>
+        <p class="text-gray-400 mt-1">Scan entry passes to verify and mark attendance</p>
+    </div>
+
+    <!-- Scanner -->
+    <div class="glass rounded-xl p-6 mb-6">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-white font-semibold">Camera Scanner</h3>
+            <button id="flip-camera-btn"
+                class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-white transition-colors flex items-center gap-2"
+                style="display:none;">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                </svg>
+                <span class="text-sm">Flip</span>
+            </button>
+        </div>
+        <div id="reader"></div>
+        <div id="scanner-status" class="text-center mt-4 text-gray-400 text-sm">Initializing camera...</div>
+    </div>
+
+    <!-- Result Display -->
+    <div id="result-container" class="hidden">
+        <div id="result-card" class="glass rounded-xl p-8 text-center"></div>
+    </div>
+
+    <!-- Manual Entry -->
+    <div class="glass rounded-xl p-6 mt-6">
+        <h3 class="text-white font-semibold mb-4 text-center">Manual Ticket Entry</h3>
+        <form id="manual-form" class="flex gap-3">
+            <input type="text" id="manual-ticket-id"
+                class="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                placeholder="Enter Ticket ID (e.g. 6A6ED93A)">
+            <button type="submit" class="px-6 py-3 btn-primary-custom rounded-lg font-semibold">Verify</button>
+        </form>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="grid grid-cols-2 gap-4 mt-6">
+        <a href="/admin/attendance" class="glass rounded-xl p-4 text-center card-hover">
+            <p class="text-gray-400 text-sm">View Attendance</p>
+            <p class="text-white font-semibold mt-1">Check Records</p>
+        </a>
+        <a href="/admin/dashboard" class="glass rounded-xl p-4 text-center card-hover">
+            <p class="text-gray-400 text-sm">Back to</p>
+            <p class="text-white font-semibold mt-1">Dashboard</p>
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const resultContainer = document.getElementById('result-container');
+    const resultCard = document.getElementById('result-card');
+    const statusDiv = document.getElementById('scanner-status');
+    const flipButton = document.getElementById('flip-camera-btn');
+
+    let waitingForTeamInput = false;
+    let autoResumeTimer = null;
+
+    const html5QrCode = new Html5Qrcode("reader");
+    let availableCameras = [];
+    let currentCameraIndex = 0;
+    let isScanning = false;
+
+    const config = { fps: 10, qrbox: { width: 250, height: 250 }, aspectRatio: 1.0 };
+
+    function onScanSuccess(decodedText) {
+        html5QrCode.pause();
+        statusDiv.textContent = 'Verifying...';
+        statusDiv.className = 'text-center mt-4 text-yellow-400 text-sm';
+        verifyQRPayload(decodedText);
+    }
+
+    function startCamera(idx) {
+        if (!availableCameras.length) return;
+        html5QrCode.start(availableCameras[idx].id, config, onScanSuccess, () => {})
+            .then(() => {
+                isScanning = true;
+                statusDiv.textContent = 'Point camera at QR code';
+                statusDiv.className = 'text-center mt-4 text-green-400 text-sm';
+            }).catch(err => {
+                isScanning = false;
+                statusDiv.textContent = 'Camera error: ' + err;
+                statusDiv.className = 'text-center mt-4 text-red-400 text-sm';
+            });
+    }
+
+    Html5Qrcode.getCameras().then(cameras => {
+        if (cameras && cameras.length) {
+            availableCameras = cameras;
+            if (cameras.length > 1) flipButton.style.display = 'flex';
+            let initial = 0;
+            for (let i = 0; i < cameras.length; i++) {
+                const l = cameras[i].label.toLowerCase();
+                if (l.includes('back') || l.includes('rear')) { initial = i; break; }
+            }
+            currentCameraIndex = initial;
+            startCamera(currentCameraIndex);
+        } else {
+            statusDiv.textContent = 'No cameras found';
+            statusDiv.className = 'text-center mt-4 text-red-400 text-sm';
+        }
+    }).catch(() => {
+        statusDiv.textContent = 'Camera access denied';
+        statusDiv.className = 'text-center mt-4 text-red-400 text-sm';
+    });
+
+    flipButton.addEventListener('click', function() {
+        if (!isScanning || availableCameras.length <= 1) return;
+        html5QrCode.stop().then(() => {
+            currentCameraIndex = (currentCameraIndex + 1) % availableCameras.length;
+            statusDiv.textContent = 'Switching camera...';
+            setTimeout(() => startCamera(currentCameraIndex), 300);
+        });
+    });
+
+    // ─── Helpers ────────────────────────────────────────
+    function clearAutoResume() {
+        if (autoResumeTimer) { clearTimeout(autoResumeTimer); autoResumeTimer = null; }
+    }
+
+    function resumeScanner() {
+        clearAutoResume();
+        waitingForTeamInput = false;
+        resultContainer.classList.add('hidden');
+        try { html5QrCode.resume(); } catch(e) {}
+        statusDiv.textContent = 'Ready to scan next QR code';
+        statusDiv.className = 'text-center mt-4 text-green-400 text-sm';
+    }
+
+    function playBeep(freq, dur) {
+        try {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.connect(gain); gain.connect(ctx.destination);
+            osc.frequency.value = freq; osc.type = 'sine'; gain.gain.value = 0.3;
+            osc.start(); setTimeout(() => osc.stop(), dur);
+        } catch(e) {}
+    }
+
+    // ─── QR Scan Verify ────────────────────────────────
+    function verifyQRPayload(payload) {
+        fetch('/scan/verify', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ qr_data: payload })
+        })
+        .then(r => r.json())
+        .then(data => {
+            showResult(data);
+            // Only auto-resume if NOT showing team member selection
+            if (data.status !== 'TEAM_ATTENDANCE') {
+                autoResumeTimer = setTimeout(resumeScanner, 4000);
+            }
+        })
+        .catch(() => {
+            showResult({ success: false, status: 'ERROR', message: 'Network error' });
+            autoResumeTimer = setTimeout(resumeScanner, 3000);
+        });
+    }
+
+    // ─── Manual Entry Verify (JSON API) ────────────────
+    function verifyTicketById(ticketId) {
+        fetch('/scan/api/ticket-details/' + ticketId)
+            .then(r => r.json())
+            .then(data => {
+                if (!data.success) {
+                    showResult({ success: false, status: 'INVALID', message: data.message || 'Ticket not found' });
+                    autoResumeTimer = setTimeout(() => resultContainer.classList.add('hidden'), 4000);
+                    return;
+                }
+
+                const ticket = data.ticket;
+
+                // Already used?
+                if (data.used) {
+                    showResult({
+                        success: false, status: 'USED',
+                        message: 'Already checked in',
+                        ticket: ticket,
+                        scanned_at: data.scanned_at,
+                        attendance_details: data.attendance_details
+                    });
+                    autoResumeTimer = setTimeout(() => resultContainer.classList.add('hidden'), 4000);
+                    return;
+                }
+
+                // Has team members? Show selection
+                const members = ticket.team_members || [];
+                if (members.length > 0) {
+                    showResult({
+                        success: true,
+                        status: 'TEAM_ATTENDANCE',
+                        message: 'Select team members present',
+                        ticket: ticket
+                    });
+                } else {
+                    // No members, mark directly
+                    markSingleAttendance(ticketId);
+                }
+            })
+            .catch(() => {
+                showResult({ success: false, status: 'ERROR', message: 'Network error' });
+                autoResumeTimer = setTimeout(() => resultContainer.classList.add('hidden'), 3000);
+            });
+    }
+
+    function markSingleAttendance(ticketId) {
+        fetch('/scan/api/mark-attendance', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ticket_id: ticketId })
+        })
+        .then(r => r.json())
+        .then(data => {
+            showResult(data);
+            autoResumeTimer = setTimeout(() => resultContainer.classList.add('hidden'), 4000);
+        })
+        .catch(() => {
+            showResult({ success: false, status: 'ERROR', message: 'Failed to mark attendance' });
+            autoResumeTimer = setTimeout(() => resultContainer.classList.add('hidden'), 3000);
+        });
+    }
+
+    // ─── Display Result ────────────────────────────────
+    function showResult(data) {
+        clearAutoResume();
+        resultContainer.classList.remove('hidden');
+
+        if (data.status === 'TEAM_ATTENDANCE') {
+            waitingForTeamInput = true;
+            showTeamMemberSelection(data.ticket);
+            playBeep(600, 150);
+            return;
+        }
+
+        waitingForTeamInput = false;
+        let icon, title, subtitle, bgClass;
+
+        if (data.status === 'VALID') {
+            icon = `<div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                <svg class="w-12 h-12 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg></div>`;
+            title = '✅ ATTENDANCE RECORDED';
+            subtitle = data.ticket ? `Team: <span class="text-green-300 font-bold">${data.ticket.team_name}</span>` : '';
+            if (data.attendance_summary) {
+                subtitle += `<div class="mt-2 text-green-300 font-semibold">${data.attendance_summary.present_count}/${data.attendance_summary.total_members} members PRESENT</div>`;
+                if (data.attendance_summary.member_details) {
+                    subtitle += '<div class="mt-3 space-y-1 text-left max-w-xs mx-auto">';
+                    data.attendance_summary.member_details.forEach(m => {
+                        const ok = m.status === 'present';
+                        subtitle += `<div class="flex items-center gap-2 text-sm py-1.5 px-3 rounded-lg ${ok ? 'bg-green-500/10 text-green-300' : 'bg-red-500/10 text-red-300'}">
+                            <span class="font-bold">${ok ? '✓' : '✗'}</span>
+                            <span class="flex-1">${m.name}</span>
+                            <span class="text-xs opacity-60">${m.position}</span>
+                        </div>`;
+                    });
+                    subtitle += '</div>';
+                }
+            }
+            bgClass = 'border-2 border-green-500/50 bg-green-500/10';
+            playBeep(800, 200);
+        } else if (data.status === 'USED') {
+            icon = `<div class="w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-12 h-12 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg></div>`;
+            title = '⚠️ ALREADY CHECKED IN';
+            subtitle = data.ticket ? `Team: <span class="text-yellow-300 font-bold">${data.ticket.team_name}</span>` : 'Ticket already scanned';
+            if (data.scanned_at) {
+                subtitle += `<div class="text-gray-500 text-xs mt-1">Scanned: ${new Date(data.scanned_at).toLocaleString()}</div>`;
+            }
+            bgClass = 'border-2 border-yellow-500/50 bg-yellow-500/10';
+            playBeep(300, 300);
+        } else {
+            icon = `<div class="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-12 h-12 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg></div>`;
+            title = '❌ INVALID';
+            subtitle = data.message || 'QR code not recognized';
+            bgClass = 'border-2 border-red-500/50 bg-red-500/10';
+            playBeep(300, 300);
+        }
+
+        resultCard.className = `glass rounded-xl p-8 text-center ${bgClass}`;
+        resultCard.innerHTML = `${icon}
+            <h2 class="text-2xl font-bold text-white mb-2">${title}</h2>
+            <div class="text-gray-300 mb-2">${subtitle}</div>
+            ${data.timestamp ? `<p class="text-gray-500 text-sm mt-3">Recorded: ${new Date(data.timestamp).toLocaleString()}</p>` : ''}`;
+    }
+
+    // ─── Team Member Selection ─────────────────────────
+    function showTeamMemberSelection(ticket) {
+        const members = ticket.team_members || [];
+        let html = '';
+        members.forEach(m => {
+            html += `
+            <label class="member-label checked flex items-center p-4 rounded-xl border-2 cursor-pointer"
+                   onclick="setTimeout(()=>toggleLabel(this),10)">
+                <input type="checkbox" value="${m.member_id}" checked
+                    class="team-member-cb w-6 h-6 accent-green-500 mr-4 cursor-pointer rounded">
+                <div class="flex-1 min-w-0">
+                    <div class="text-white font-semibold text-lg">${m.name}</div>
+                    <div class="text-gray-400 text-sm">${m.position}</div>
+                </div>
+                <span class="status-badge px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap">✓ PRESENT</span>
+            </label>`;
+        });
+
+        resultCard.className = 'glass rounded-xl p-6 border-2 border-blue-500/50 bg-blue-500/5';
+        resultCard.innerHTML = `
+            <div class="text-center mb-5">
+                <div class="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-1">Team Attendance</h2>
+                <p class="text-blue-300 font-semibold text-lg">${ticket.team_name}</p>
+                <p class="text-gray-400 text-sm">Code: ${ticket.user_id || ticket.ticket_id}</p>
+            </div>
+            <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 mb-5 text-center">
+                <p class="text-yellow-300 font-medium text-sm">👆 Uncheck members who are ABSENT</p>
+            </div>
+            <div class="space-y-3 mb-6 max-h-[50vh] overflow-y-auto">${html}</div>
+            <div class="flex gap-3">
+                <button id="submit-att-btn" onclick="window._submitAtt('${ticket.ticket_id}')"
+                    class="flex-1 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold text-lg rounded-xl hover:from-green-500 hover:to-emerald-500 transition-all shadow-lg shadow-green-500/20 active:scale-[0.97]">
+                    ✅ Mark Attendance
+                </button>
+                <button onclick="window._cancelAtt()"
+                    class="px-6 py-4 bg-gray-700 text-gray-300 font-semibold rounded-xl hover:bg-gray-600 transition">
+                    Cancel
+                </button>
+            </div>`;
+    }
+
+    // Global: toggle label class
+    window.toggleLabel = function(label) {
+        const cb = label.querySelector('input[type=checkbox]');
+        const badge = label.querySelector('.status-badge');
+        if (cb.checked) {
+            label.className = label.className.replace('unchecked', 'checked');
+            badge.textContent = '✓ PRESENT';
+        } else {
+            label.className = label.className.replace('checked', 'unchecked');
+            badge.textContent = '✗ ABSENT';
+        }
+    };
+
+    // Global: submit team attendance
+    window._submitAtt = function(ticketId) {
+        const checked = document.querySelectorAll('.team-member-cb:checked');
+        const present = Array.from(checked).map(cb => cb.value);
+
+        if (present.length === 0) {
+            const btn = document.getElementById('submit-att-btn');
+            btn.textContent = '⚠️ Select at least 1 member!';
+            btn.className = 'flex-1 py-4 bg-red-600 text-white font-bold text-lg rounded-xl';
+            setTimeout(() => {
+                btn.textContent = '✅ Mark Attendance';
+                btn.className = 'flex-1 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold text-lg rounded-xl hover:from-green-500 hover:to-emerald-500 transition-all shadow-lg shadow-green-500/20 active:scale-[0.97]';
+            }, 2000);
+            return;
+        }
+
+        const btn = document.getElementById('submit-att-btn');
+        btn.disabled = true;
+        btn.textContent = '⏳ Recording...';
+        btn.className = 'flex-1 py-4 bg-gray-600 text-white font-bold text-lg rounded-xl cursor-wait';
+
+        fetch('/scan/team-attendance', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ticket_id: ticketId, present_members: present })
+        })
+        .then(r => r.json())
+        .then(data => {
+            waitingForTeamInput = false;
+            showResult(data);
+            autoResumeTimer = setTimeout(resumeScanner, 5000);
+        })
+        .catch(() => {
+            waitingForTeamInput = false;
+            showResult({ success: false, status: 'ERROR', message: 'Network error' });
+            autoResumeTimer = setTimeout(resumeScanner, 3000);
+        });
+    };
+
+    // Global: cancel
+    window._cancelAtt = function() {
+        waitingForTeamInput = false;
+        resumeScanner();
+    };
+
+    // Manual form
+    document.getElementById('manual-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const tid = document.getElementById('manual-ticket-id').value.trim().toUpperCase();
+        if (!tid) return;
+        document.getElementById('manual-ticket-id').value = '';
+
+        resultContainer.classList.remove('hidden');
+        resultCard.className = 'glass rounded-xl p-8 text-center border-2 border-blue-500/30 bg-blue-500/5';
+        resultCard.innerHTML = `
+            <div class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <p class="text-white font-semibold">Verifying ${tid}...</p>`;
+
+        verifyTicketById(tid);
+    });
+});
+</script>
+{% endblock %}

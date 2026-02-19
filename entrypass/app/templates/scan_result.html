@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block title %}Scan Result - HACKFEST2K26{% endblock %}
+
+{% block content %}
+<div class="max-w-lg mx-auto px-4 py-8">
+    <!-- Result Card -->
+    <div class="glass rounded-2xl border border-white/10 p-8 text-center">
+
+        {% if result.status == 'TEAM_ATTENDANCE' %}
+        <!-- Team Member Selection (for manual form POST) -->
+        <div class="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-4xl">👥</span>
+        </div>
+        <h1 class="text-2xl font-bold text-blue-400 mb-2">Team Attendance</h1>
+        <p class="text-white font-semibold text-lg">{{ result.ticket.team_name }}</p>
+        <p class="text-gray-400 text-sm mb-4">Code: {{ result.ticket.user_id }}</p>
+
+        <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 mb-5">
+            <p class="text-yellow-300 font-medium text-sm">👆 Check the members who are PRESENT</p>
+        </div>
+
+        <form id="team-attendance-form" class="text-left">
+            <input type="hidden" name="ticket_id" value="{{ result.ticket.ticket_id }}">
+            <div class="space-y-3 mb-6">
+                {% for member in result.team_members %}
+                <label class="flex items-center p-4 rounded-xl border-2 border-green-500/30 bg-green-500/10 cursor-pointer hover:bg-green-500/15 transition">
+                    <input type="checkbox" name="present_members" value="{{ member.member_id }}" checked
+                        class="w-6 h-6 accent-green-500 mr-4 cursor-pointer rounded">
+                    <div class="flex-1">
+                        <div class="text-white font-semibold">{{ member.name }}</div>
+                        <div class="text-gray-400 text-sm">{{ member.position }}</div>
+                    </div>
+                    <span class="text-green-400 text-xs font-bold">✓ PRESENT</span>
+                </label>
+                {% endfor %}
+            </div>
+            <button type="submit"
+                class="w-full py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold text-lg rounded-xl hover:from-green-500 hover:to-emerald-500 transition-all shadow-lg">
+                ✅ Mark Attendance
+            </button>
+        </form>
+
+        <script>
+        document.getElementById('team-attendance-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const checked = this.querySelectorAll('input[name="present_members"]:checked');
+            const present = Array.from(checked).map(cb => cb.value);
+            const ticketId = this.querySelector('input[name="ticket_id"]').value;
+
+            if (present.length === 0) {
+                alert('Select at least one member');
+                return;
+            }
+
+            const btn = this.querySelector('button[type="submit"]');
+            btn.disabled = true;
+            btn.textContent = '⏳ Recording...';
+
+            fetch('/scan/team-attendance', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ticket_id: ticketId, present_members: present })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.success) {
+                    btn.textContent = '✅ Attendance Recorded!';
+                    btn.className = 'w-full py-4 bg-green-600 text-white font-bold text-lg rounded-xl';
+                    setTimeout(() => window.location.href = '/scan', 2000);
+                } else {
+                    btn.textContent = '❌ ' + (data.message || 'Error');
+                    btn.className = 'w-full py-4 bg-red-600 text-white font-bold text-lg rounded-xl';
+                    btn.disabled = false;
+                    setTimeout(() => {
+                        btn.textContent = '✅ Mark Attendance';
+                        btn.className = 'w-full py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold text-lg rounded-xl hover:from-green-500 hover:to-emerald-500 transition-all shadow-lg';
+                    }, 2000);
+                }
+            })
+            .catch(() => {
+                btn.textContent = '❌ Network Error';
+                btn.disabled = false;
+            });
+        });
+        </script>
+
+        {% elif result.status == 'VALID' %}
+        <!-- Valid Entry -->
+        <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+            <span class="text-4xl">✅</span>
+        </div>
+        <h1 class="text-3xl font-bold text-green-400 mb-2">ENTRY ALLOWED</h1>
+        <p class="text-gray-400">Ticket verified successfully</p>
+
+        {% elif result.status == 'USED' %}
+        <!-- Already Used -->
+        <div class="w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-4xl">⚠️</span>
+        </div>
+        <h1 class="text-3xl font-bold text-yellow-400 mb-2">ALREADY USED</h1>
+        <p class="text-gray-400">This ticket has already been scanned</p>
+        {% if result.scanned_at %}
+        <p class="text-yellow-500 text-sm mt-2">First scan: {{ result.scanned_at }}</p>
+        {% endif %}
+
+        {% elif result.status == 'CHECKED_IN' %}
+        <div class="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-4xl">📋</span>
+        </div>
+        <h1 class="text-3xl font-bold text-blue-400 mb-2">ALREADY CHECKED IN</h1>
+        <p class="text-gray-400">This attendee is already present</p>
+
+        {% else %}
+        <!-- Invalid -->
+        <div class="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-4xl">❌</span>
+        </div>
+        <h1 class="text-3xl font-bold text-red-400 mb-2">INVALID TICKET</h1>
+        <p class="text-gray-400">{{ result.message }}</p>
+        {% endif %}
+
+        <!-- Ticket Details -->
+        {% if result.ticket and result.status != 'TEAM_ATTENDANCE' %}
+        <div class="mt-8 bg-white/5 rounded-xl p-6 text-left border border-white/10">
+            <h3 class="text-white font-semibold mb-4">Ticket Details</h3>
+            <div class="space-y-3">
+                <div class="flex justify-between">
+                    <span class="text-gray-400">Team Name</span>
+                    <span class="text-white font-medium">{{ result.ticket.team_name }}</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-400">Ticket ID</span>
+                    <span class="text-gray-300 font-mono text-sm">{{ result.ticket.ticket_id }}</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-400">Team Code</span>
+                    <span class="text-indigo-400 font-mono text-sm font-bold">{{ result.ticket.user_id }}</span>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if result.timestamp %}
+        <p class="text-green-400 text-sm mt-6">⏰ Recorded: {{ result.timestamp }}</p>
+        {% endif %}
+    </div>
+
+    <!-- Actions -->
+    <div class="mt-6 flex gap-4">
+        <a href="/scan"
+            class="flex-1 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold rounded-xl text-center transition-all">
+            📷 Scan Another
+        </a>
+        <a href="/admin/attendance"
+            class="flex-1 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-center transition">
+            View Records
+        </a>
+    </div>
+</div>
+{% endblock %}

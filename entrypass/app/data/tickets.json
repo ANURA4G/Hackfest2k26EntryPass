@@ -1,0 +1,94 @@
+{
+    "tickets": [],
+    "users": []
+}
+            "user_id": "HF2026",
+            "team_name": "404",
+            "college_name": "mkce",
+            "team_leader_email": "anuraaganuraagrai@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "nigga1",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "nigga 2",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "nigga 3",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI2QTZFRDkzQSIsInVzZXJfaWQiOiJIRjIwMjYiLCJ0ZWFtX25hbWUiOiI0MDQiLCJ0aW1lc3RhbXAiOjE3NzE0OTE1MTQsInNpZ25hdHVyZSI6IjYyNmQxZDE1YjhhY2M0YTVhYTgxMmMwMGEyOTc5NWU3N2Q5ZjM3ZjQ4MjgyOTZkYjhkOGRmZjcwMWZlZDJiNGIifQ==",
+            "created_at": "2026-02-19T14:28:34.637031",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "6411FE31",
+            "user_id": "HF20262",
+            "team_name": "4041",
+            "college_name": "mkce",
+            "team_leader_email": "anuraaganuraagrai@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "nigga1",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "nigga 2",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "nigga 3",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI2NDExRkUzMSIsInVzZXJfaWQiOiJIRjIwMjYyIiwidGVhbV9uYW1lIjoiNDA0MSIsInRpbWVzdGFtcCI6MTc3MTQ5MTk4Niwic2lnbmF0dXJlIjoiNTZiZGZiMzc5MGNkYjZhMDMxYmQyZjJlMmZjNjkyN2VjYmE4NDNjNzEwNTlkOWZlMjgyNjcxNjZlOWVjNTNkMCJ9",
+            "created_at": "2026-02-19T14:36:26.067081",
+            "created_by": "admin"
+        },
+        {
+            "ticket_id": "DACD8187",
+            "user_id": "HF202621",
+            "team_name": "40411",
+            "college_name": "mkce",
+            "team_leader_email": "anuraaganuraagrai@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "nigga1",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "nigga 2",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "nigga 3",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEQUNEODE4NyIsInVzZXJfaWQiOiJIRjIwMjYyMSIsInRlYW1fbmFtZSI6IjQwNDExIiwidGltZXN0YW1wIjoxNzcxNDkzNjE2LCJzaWduYXR1cmUiOiI5OTg1MjQzNmIwOGFkNjg1YTJkZWFhMzNlOGE5NTFiZTc1OWEzOTNmNjg3NmVjZjg4YjZiMmQ0MWM2YzkxZjVkIn0=",
+            "created_at": "2026-02-19T15:03:36.875999",
+            "created_by": "admin"
+        }
+    ]
+}

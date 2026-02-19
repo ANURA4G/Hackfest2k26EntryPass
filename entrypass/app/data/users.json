@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "id": "admin-001",
+            "username": "adminmkce",
+            "password_hash": "a8f5f167f44f4964e6c998dee827110c8e0c4d7f1f4c7b8f5c3a3e2d1c0b9a8f",
+            "password_plain": "hackfest-2k26",
+            "role": "admin",
+            "email": "admin@mkce.edu",
+            "name": "MKCE Admin",
+            "created_at": "2024-01-01T00:00:00Z"
+        }
+    ]
+}

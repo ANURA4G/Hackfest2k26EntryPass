@@ -1,0 +1,134 @@
+/*
+Main Stylesheet
+================
+
+Event Ticketing System - Main CSS
+
+*/
+
+/* =====================
+   1. CSS Variables
+   ===================== */
+:root {
+    --primary: #0066cc;
+    --secondary: #28a745;
+    --danger: #dc3545;
+    --dark: #333;
+    --light: #f5f5f5;
+    --white: #fff;
+    --gray: #666;
+    --border: #ddd;
+    --shadow: rgba(0,0,0,0.1);
+    --radius: 4px;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* =====================
+   2. Reset / Base
+   ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    line-height: 1.6;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   3. Typography
+   ===================== */
+h1, h2, h3, h4 {
+    margin-bottom: 0.5rem;
+}
+
+/* =====================
+   4. Layout
+   ===================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* =====================
+   5. Components
+   ===================== */
+.card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+/* =====================
+   6. Forms
+   ===================== */
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-family: inherit;
+}
+
+/* =====================
+   7. Buttons
+   ===================== */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* =====================
+   8. Dashboard
+   ===================== */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* =====================
+   9. Scanner
+   ===================== */
+.scanner-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* =====================
+   10. Responsive
+   ===================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+}
