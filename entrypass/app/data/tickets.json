@@ -1,94 +1,2822 @@
 {
-    "tickets": [],
-    "users": []
-}
-            "user_id": "HF2026",
-            "team_name": "404",
-            "college_name": "mkce",
-            "team_leader_email": "anuraaganuraagrai@gmail.com",
-            "team_size": 3,
+    "tickets": [
+        {
+            "ticket_id": "9134D92C",
+            "user_id": "HF2601",
+            "team_name": "One Percent Club",
+            "college_name": "Mepco Schlenk Engineering College",
+            "team_leader_email": "krishya2005_bit27@mepcoeng.ac.in",
+            "team_size": 4,
             "team_members": [
                 {
-                    "name": "nigga1",
+                    "name": "K.Santhosh Kumar",
                     "position": "Team Leader",
                     "member_id": 1
                 },
                 {
-                    "name": "nigga 2",
+                    "name": "M Vaibav Ram",
                     "position": "Member 2",
                     "member_id": 2
                 },
                 {
-                    "name": "nigga 3",
+                    "name": "Vijay Prabu K",
                     "position": "Member 3",
                     "member_id": 3
+                },
+                {
+                    "name": "J Yokeshwar",
+                    "position": "Member 4",
+                    "member_id": 4
                 }
             ],
             "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
             "event_name": "HACKFEST2K26",
-            "qr_payload": "eyJ0aWNrZXRfaWQiOiI2QTZFRDkzQSIsInVzZXJfaWQiOiJIRjIwMjYiLCJ0ZWFtX25hbWUiOiI0MDQiLCJ0aW1lc3RhbXAiOjE3NzE0OTE1MTQsInNpZ25hdHVyZSI6IjYyNmQxZDE1YjhhY2M0YTVhYTgxMmMwMGEyOTc5NWU3N2Q5ZjM3ZjQ4MjgyOTZkYjhkOGRmZjcwMWZlZDJiNGIifQ==",
-            "created_at": "2026-02-19T14:28:34.637031",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5MTM0RDkyQyIsInVzZXJfaWQiOiJIRjI2MDEiLCJ0ZWFtX25hbWUiOiJPbmUgUGVyY2VudCBDbHViIiwidGltZXN0YW1wIjoxNzcxNTAyNDY1LCJzaWduYXR1cmUiOiJmYjlkYWY5MTAwZGJmOTE2OTY3YjZmMGZjMDhlNTNkYTkxMmI4MmQ4MmQ4ZWM2ODc2YjJjNDMyMmJkNjI1MDJjIn0=",
+            "created_at": "2026-02-19T17:31:05.589236",
             "created_by": "admin"
         },
         {
-            "ticket_id": "6411FE31",
-            "user_id": "HF20262",
-            "team_name": "4041",
-            "college_name": "mkce",
-            "team_leader_email": "anuraaganuraagrai@gmail.com",
-            "team_size": 3,
+            "ticket_id": "C994B553",
+            "user_id": "HFI2601",
+            "team_name": "AI AUTOBOTS",
+            "college_name": "K.Ramakrishnan College of Technology",
+            "team_leader_email": "srinivas.cs23@krct.ac.in",
+            "team_size": 4,
             "team_members": [
                 {
-                    "name": "nigga1",
+                    "name": "SACHIN KUMAR A",
                     "position": "Team Leader",
                     "member_id": 1
                 },
                 {
-                    "name": "nigga 2",
+                    "name": "SRINIVAS R",
                     "position": "Member 2",
                     "member_id": 2
                 },
                 {
-                    "name": "nigga 3",
+                    "name": "RAJAKARTHIKEYAN V",
                     "position": "Member 3",
                     "member_id": 3
+                },
+                {
+                    "name": "THARUNIYA T",
+                    "position": "Member 4",
+                    "member_id": 4
                 }
             ],
             "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
             "event_name": "HACKFEST2K26",
-            "qr_payload": "eyJ0aWNrZXRfaWQiOiI2NDExRkUzMSIsInVzZXJfaWQiOiJIRjIwMjYyIiwidGVhbV9uYW1lIjoiNDA0MSIsInRpbWVzdGFtcCI6MTc3MTQ5MTk4Niwic2lnbmF0dXJlIjoiNTZiZGZiMzc5MGNkYjZhMDMxYmQyZjJlMmZjNjkyN2VjYmE4NDNjNzEwNTlkOWZlMjgyNjcxNjZlOWVjNTNkMCJ9",
-            "created_at": "2026-02-19T14:36:26.067081",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDOTk0QjU1MyIsInVzZXJfaWQiOiJIRkkyNjAxIiwidGVhbV9uYW1lIjoiQUkgQVVUT0JPVFMiLCJ0aW1lc3RhbXAiOjE3NzE1MDI0NjgsInNpZ25hdHVyZSI6ImRiYzkzZDlkNDk0YjlmNWExMjE3ZjM4NDU0YTAyMmRhNmI2YjhkY2MxNzMzMDJlNGYxY2Y1MWI4MjY2MjBlZTUifQ==",
+            "created_at": "2026-02-19T17:31:08.385951",
             "created_by": "admin"
         },
         {
-            "ticket_id": "DACD8187",
-            "user_id": "HF202621",
-            "team_name": "40411",
-            "college_name": "mkce",
-            "team_leader_email": "anuraaganuraagrai@gmail.com",
-            "team_size": 3,
+            "ticket_id": "112F8421",
+            "user_id": "HF2602",
+            "team_name": "Curiosity",
+            "college_name": "RATHINAM TECHNICAL CAMPUS",
+            "team_leader_email": "anandsurya153@gmail.com",
+            "team_size": 4,
             "team_members": [
                 {
-                    "name": "nigga1",
+                    "name": "Sundararooban",
                     "position": "Team Leader",
                     "member_id": 1
                 },
                 {
-                    "name": "nigga 2",
+                    "name": "Surya Prasad",
                     "position": "Member 2",
                     "member_id": 2
                 },
                 {
-                    "name": "nigga 3",
+                    "name": "Thasnima Nargies",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Nitika Sri",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIxMTJGODQyMSIsInVzZXJfaWQiOiJIRjI2MDIiLCJ0ZWFtX25hbWUiOiJDdXJpb3NpdHkiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNDksInNpZ25hdHVyZSI6IjU5OTIyMTJmN2U2NGQxNTQzNTRlNzk4OTlmYWUwMWFiYTIzZjAyMWRlNDJlZDI2ZjNlMGFiYThiNDI0YTMyM2YifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Hybrid Autonomous Aerial Ground Gas Leak Detection and Safety Response System",
+            "tshirt_sizes": "1 member L\n2 member M\n1 member xs",
+            "food_preference": "4 members - non veg",
+            "created_at": "2026-02-19T18:15:49.490613",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "166E3BD2",
+            "user_id": "HF2603",
+            "team_name": "Hash",
+            "college_name": "VEL TECH RANGARAJAN DR.SAGUNTHALA R&D INSTITUTE OF SCIENCE AND TECHNOLOGY",
+            "team_leader_email": "mano.d.cruez@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Manoj Kumar P",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "B. Soorya Prakash",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "V. Yuvaraju",
                     "position": "Member 3",
                     "member_id": 3
                 }
             ],
             "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
             "event_name": "HACKFEST2K26",
-            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEQUNEODE4NyIsInVzZXJfaWQiOiJIRjIwMjYyMSIsInRlYW1fbmFtZSI6IjQwNDExIiwidGltZXN0YW1wIjoxNzcxNDkzNjE2LCJzaWduYXR1cmUiOiI5OTg1MjQzNmIwOGFkNjg1YTJkZWFhMzNlOGE5NTFiZTc1OWEzOTNmNjg3NmVjZjg4YjZiMmQ0MWM2YzkxZjVkIn0=",
-            "created_at": "2026-02-19T15:03:36.875999",
-            "created_by": "admin"
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIxNjZFM0JEMiIsInVzZXJfaWQiOiJIRjI2MDMiLCJ0ZWFtX25hbWUiOiJIYXNoIiwidGltZXN0YW1wIjoxNzcxNTA1MTQ5LCJzaWduYXR1cmUiOiI0ZjUyMTg2MWNjNTAxODlmNzEwZmY4OTMwNTFlZjE4NGU4OGVjMWExNjBlZjI4ZjM3YWRmYmViMTAyNWYxMzE4In0=",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Smart Tracker and Safer Cities",
+            "tshirt_sizes": "2 members - L\n1 member - XXL",
+            "food_preference": "3 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:49.651080",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "2D0B8386",
+            "user_id": "HF2604",
+            "team_name": "Code Nova",
+            "college_name": "Saranathan college of engineering",
+            "team_leader_email": "sabarishwaran082@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Sabarishwaran C",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Saiman raj V",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sanju M",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Santhosh  R",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIyRDBCODM4NiIsInVzZXJfaWQiOiJIRjI2MDQiLCJ0ZWFtX25hbWUiOiJDb2RlIE5vdmEiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNDksInNpZ25hdHVyZSI6ImZlZTJjZmNjNTM2MDM2YjMwZWIxODhlMmNlNTRjMmMzOWI0ZmZkYWZjNDcwMGJmOGVjMWY1OTc0ZDUyZDI4NGYifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "An AI-Driven Predictive Maintenance Architecture for CNC Machines Based on IoT Sensor Analytics and Cloud Intelligence",
+            "tshirt_sizes": "2 members - M \n1 member - XL\n1 member - XXL",
+            "food_preference": "4 members - Non - Veg",
+            "created_at": "2026-02-19T18:15:49.792022",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "97986C56",
+            "user_id": "HF2605",
+            "team_name": "Zen Orbit",
+            "college_name": "PSNA COLLAGE OF ENGINEERING",
+            "team_leader_email": "srivarshanss08@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "SRI VARSHAN S S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "SHACHIN V P",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "VENGATA VISVA P S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "SANTHOSH KUMAR S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5Nzk4NkM1NiIsInVzZXJfaWQiOiJIRjI2MDUiLCJ0ZWFtX25hbWUiOiJaZW4gT3JiaXQiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNDksInNpZ25hdHVyZSI6IjY2N2Y4NzUyNDViNjM0YzgzZGZkMTRhNTc0YzAwOTNkMWRhYzFjOWMxMTUwMWFlZGMxMzQyZGQzNjQwOGEyMzQifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "An Integrated AI-Driven Hybrid Platform for Satellite Error Prediction and Intelligent Space Operations",
+            "tshirt_sizes": "2 members - S , 2 members M",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:49.938709",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "7A4EE983",
+            "user_id": "HF2606",
+            "team_name": "Stars",
+            "college_name": "Kongunadu College Of Engineering And Technology",
+            "team_leader_email": "hemdhev2012@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Suruthilaya S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Santhanalakshmi V",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Samyugtha M",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI3QTRFRTk4MyIsInVzZXJfaWQiOiJIRjI2MDYiLCJ0ZWFtX25hbWUiOiJTdGFycyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1MCwic2lnbmF0dXJlIjoiM2YzNGM1OGQ3YzhlMWViNDc5MWEzZTQ2MTU1NWFkZmMzNDkxYmQ2ZWVlZTQxOWM1NGFlYzdlZjc2MDJlMmIxZCJ9",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "An Automated Framework For Early Identification Of Pre-Eclampsia",
+            "tshirt_sizes": "2 members-L \n1 member -XL",
+            "food_preference": "3 members- Non-Veg",
+            "created_at": "2026-02-19T18:15:50.086042",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "E4B68AC6",
+            "user_id": "HF2607",
+            "team_name": "TEAM 7",
+            "college_name": "Saranathan College of engineering",
+            "team_leader_email": "vmadhanprabu95@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "MADHAN  V",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Divyadharshni s",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Dhivya Harini",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Narmadha",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJFNEI2OEFDNiIsInVzZXJfaWQiOiJIRjI2MDciLCJ0ZWFtX25hbWUiOiJURUFNIDciLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTAsInNpZ25hdHVyZSI6ImI1MjdhMjkzYjNiYzM3MThiYmExMmZjODU0NDMwZjgwNDJiZjU4N2ZlYzA4ZmYwNDhjZjI4NDgxMjg3ZWVjNDkifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Smart Health Monitoring and Wellness Support System",
+            "tshirt_sizes": "2 member xxl and 2 member l",
+            "food_preference": "2 member non veg and 2 member veg",
+            "created_at": "2026-02-19T18:15:50.226052",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "09B27851",
+            "user_id": "HF2608",
+            "team_name": "The Untouchables:",
+            "college_name": "MEPCO SCHLENK ENGINEERING COLLEGE",
+            "team_leader_email": "thenkumar2001@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Mukesh Krishna K",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Mathesh M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Jayasaravanakumar R",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Madhan Kumar V",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIwOUIyNzg1MSIsInVzZXJfaWQiOiJIRjI2MDgiLCJ0ZWFtX25hbWUiOiJUaGUgVW50b3VjaGFibGVzOiIsInRpbWVzdGFtcCI6MTc3MTUwNTE1MCwic2lnbmF0dXJlIjoiYmFhNDk0ODgzMzdiYmE0YmMxZTdlZjlhOTg0NDQ5NmFjZTFjZWJhODgxYzIwMDkxMzY2MzhmNzdmZGZiOWNjYiJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Integrity Driven Lab Evaluation System",
+            "tshirt_sizes": "2 members XL\n2 members - L",
+            "food_preference": "4 members - Non-veg",
+            "created_at": "2026-02-19T18:15:50.373137",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "9EC38817",
+            "user_id": "HF2609",
+            "team_name": "POWERHOUSE",
+            "college_name": "Kongunadu college of engineering and technology",
+            "team_leader_email": "sanjeevsanju4000@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Deepika E",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Naveeth R P",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sanjay T",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Sanjeev S T",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5RUMzODgxNyIsInVzZXJfaWQiOiJIRjI2MDkiLCJ0ZWFtX25hbWUiOiJQT1dFUkhPVVNFIiwidGltZXN0YW1wIjoxNzcxNTA1MTUwLCJzaWduYXR1cmUiOiI3NTNkMDY5MjYzNTVhY2RhMTUzZjNkZTRiNWFiNTY5NWJkM2M4NGJiOGMwZDM0N2JkZTI3MDZjODYwYWUzNGFmIn0=",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "BeatRescue-Offline AI-based grid system for buried victim detection",
+            "tshirt_sizes": "1 member - L,2 members-M,1 member -S",
+            "food_preference": "4 members -non-veg",
+            "created_at": "2026-02-19T18:15:50.516103",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "C7EE5F48",
+            "user_id": "HF2610",
+            "team_name": "Minus One",
+            "college_name": "Saranathan College of Engineering",
+            "team_leader_email": "tharanetharan78005@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Tharanetharan S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Abisheik P",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Nisha Suresh",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Anees Banu",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDN0VFNUY0OCIsInVzZXJfaWQiOiJIRjI2MTAiLCJ0ZWFtX25hbWUiOiJNaW51cyBPbmUiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTAsInNpZ25hdHVyZSI6IjJiY2UyM2JiM2FiYjM2YzhhYTU0OWQ0ZDhhMTdiZmY5YjY5MmNjOGI3YWE0MGQ3MjQyZWY4YzI5OWI5YzFhYjgifQ==",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Student Activity Hub \u2014 Redefining Education Through Holistic Achievement Tracking",
+            "tshirt_sizes": "1 member - XL \n3 members - M",
+            "food_preference": "4 memebers - Non-Veg",
+            "created_at": "2026-02-19T18:15:50.669837",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "86B244E4",
+            "user_id": "HF2611",
+            "team_name": "Arkay",
+            "college_name": "Psna college of engineering and technology",
+            "team_leader_email": "archanaa8642@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Adharshini K",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Archanaa M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Abirami S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Abhinaya D S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4NkIyNDRFNCIsInVzZXJfaWQiOiJIRjI2MTEiLCJ0ZWFtX25hbWUiOiJBcmtheSIsInRpbWVzdGFtcCI6MTc3MTUwNTE1MCwic2lnbmF0dXJlIjoiMTYyMTE2NjgzZjE3ODIyOThjYTZhY2NkNmY2YjgxNmRhODY4NGI1MDFjOWMyMTVjN2NhZTUyNTlmMTY3ZjA0YiJ9",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "ARKAY - Restoring Voice Beyond Sound",
+            "tshirt_sizes": "1 member - M\n3 members - L",
+            "food_preference": "3 members - Non- veg\n1 member - Veg",
+            "created_at": "2026-02-19T18:15:50.817871",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "D8CCD759",
+            "user_id": "HF2612",
+            "team_name": "CONNECTRA",
+            "college_name": "KGISL INSTITUTE OF TECHNOLOGY",
+            "team_leader_email": "sanjaisp7@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "SANJAY M",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "SINDHUJASHREE R",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "DHARSHIKA PUGALENTHI",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "ABIRAMI R",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEOENDRDc1OSIsInVzZXJfaWQiOiJIRjI2MTIiLCJ0ZWFtX25hbWUiOiJDT05ORUNUUkEiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTAsInNpZ25hdHVyZSI6ImM0MjdhMGIzMWUxNTEyM2E0MDFmYmU5Mjc2OTJkZGY2N2M3OGU2ZjM1ZTE1NTliYTIxODUyZjVkNTI3MjQ2NzkifQ==",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "SMART WASTE SEGREGATION SYSTEM",
+            "tshirt_sizes": "2 members - S\n1 member - XL\n1 member - 2XL",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:50.963636",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "926BC557",
+            "user_id": "HF2613",
+            "team_name": "Wired Brains",
+            "college_name": "KGISL Institute Of Technology",
+            "team_leader_email": "thejasanbu5@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Thejas Anbu Sivaraj",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Ronik Eeswar N R",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Abishek S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Sujith M S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5MjZCQzU1NyIsInVzZXJfaWQiOiJIRjI2MTMiLCJ0ZWFtX25hbWUiOiJXaXJlZCBCcmFpbnMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTEsInNpZ25hdHVyZSI6Ijk0ZDA1MjI0ZGVkNzQyODhhODA4YmJmNDliYWRiMWY5MjQ3MDY1ZWZmOTIyMjQ5OGE5M2UxNDczOTBkZGEwYjAifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "RehabVR - Virtual Physical Rehabilitation",
+            "tshirt_sizes": "4 Members - M",
+            "food_preference": "4 Members - Non-Veg",
+            "created_at": "2026-02-19T18:15:51.109635",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "DE8090A8",
+            "user_id": "HF2614",
+            "team_name": "Celestial frontiers",
+            "college_name": "Dr mahalingam college of engineering and technology",
+            "team_leader_email": "ridhusugan@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Vibhuvarsan S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Srijaa U",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Ritikasri S.S",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJERTgwOTBBOCIsInVzZXJfaWQiOiJIRjI2MTQiLCJ0ZWFtX25hbWUiOiJDZWxlc3RpYWwgZnJvbnRpZXJzIiwidGltZXN0YW1wIjoxNzcxNTA1MTUxLCJzaWduYXR1cmUiOiI0YTE2Y2YxM2NhN2FmZTBkMzVjN2Q3OGJmYmI5NTlmNjI0NzI5ODE5OTU2NjA4ZTRkNTJlMzllNzA5MmNjZDM1In0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "HealthSphere \u2013 Intelligent Early Detection & Wellness Ecosystem",
+            "tshirt_sizes": "2 members - S\n2 members -M",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:51.250635",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "D1A1480C",
+            "user_id": "HF2615",
+            "team_name": "Tech Warriors",
+            "college_name": "Srm institute of science and technology Vadapalani campus",
+            "team_leader_email": "manager.techwarriors@gmail.com",
+            "team_size": 2,
+            "team_members": [
+                {
+                    "name": "Mithran M",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Gnaneshwar B",
+                    "position": "Member 2",
+                    "member_id": 2
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEMUExNDgwQyIsInVzZXJfaWQiOiJIRjI2MTUiLCJ0ZWFtX25hbWUiOiJUZWNoIFdhcnJpb3JzIiwidGltZXN0YW1wIjoxNzcxNTA1MTUxLCJzaWduYXR1cmUiOiIzNGQ5NDE5YzMzZWRiYzhhNTkxM2U2YTgyNzIzZDE3M2IxZGExZjZiMjlkNzk1YjRmYmY4ZmQwMTAzZmVlZDU2In0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "ASCLEPIUS",
+            "tshirt_sizes": "1 member - S\n1 member - M",
+            "food_preference": "2 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:51.395639",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "3C7E9261",
+            "user_id": "HF2616",
+            "team_name": "Visionaries",
+            "college_name": "PES University",
+            "team_leader_email": "samarth151005@gmail.coma",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Malatesh B S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "M S Samarth Bharadwaj",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Kushal Jantli",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Kevin Gilbert",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzQzdFOTI2MSIsInVzZXJfaWQiOiJIRjI2MTYiLCJ0ZWFtX25hbWUiOiJWaXNpb25hcmllcyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1MSwic2lnbmF0dXJlIjoiOWY3ZDcyMTFiMDViNWU3NDRmZjE2YzA4MTEzYWI4MjFjMjZlMTg5MmYwZjRkOWRjMjdkYjJmMDNkMjA2ZGJkZCJ9",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "Project Title: UniGrid-AI-Orchestrated Middleware for Resilient EV Charging Infrastructure",
+            "tshirt_sizes": "2 members - XL\n1 member - XXL\n1 member - M",
+            "food_preference": "2 members - Veg\n2 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:51.543651",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "8FCEEE38",
+            "user_id": "HF2617",
+            "team_name": "HelioInsight",
+            "college_name": "Sri Sivasubramaniya Nadar College of Engineering",
+            "team_leader_email": "darshana2310838@ssn.edu.in",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Paranthagan S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Anirudh Krishna M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Darshana S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Nithya Roopini M",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4RkNFRUUzOCIsInVzZXJfaWQiOiJIRjI2MTciLCJ0ZWFtX25hbWUiOiJIZWxpb0luc2lnaHQiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTEsInNpZ25hdHVyZSI6ImY4ZWI3MmM4ZjYyOTBhZDg2MmI2MWVkMjE0NGJhNGM0Y2E1MTM1MTZiYzgzMDc2Y2E5ZjRkNzY5ZDU2OTNkZTgifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "A Sustainable Framework for Automated Solar Defect Detection and Classification with Interpretable and Conversational Support",
+            "tshirt_sizes": "3 members - L, 1 member - XL",
+            "food_preference": "4 members - Veg",
+            "created_at": "2026-02-19T18:15:51.685974",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "8CD2D515",
+            "user_id": "HF2618",
+            "team_name": "NeuroNex",
+            "college_name": "EASA College Of Engineering And Technology, EASA College Of Engineering And Technology, EASA College Of Engineering And Technology, Kongu Engineering College",
+            "team_leader_email": "abisheakrks@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Yogeswaran A (III Year/AI&DS) (EASA College Of Engineering And Technology)",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Abisheak Sivakumar (III Year/AI&DS) (EASA College Of Engineering And Technology)",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Deepak S (II Year/AI&DS) (EASA College Of Engineering And Technology)",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Prakash N (II Year/EEE) (Kongu Engineering College)",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4Q0QyRDUxNSIsInVzZXJfaWQiOiJIRjI2MTgiLCJ0ZWFtX25hbWUiOiJOZXVyb05leCIsInRpbWVzdGFtcCI6MTc3MTUwNTE1MSwic2lnbmF0dXJlIjoiMDIxYjAwNjQ1YmQzNjZmM2M1NDQwNzE5ZGQ3YWRhOTQ4ZTIwNDUwOTYxODM1MzY0ZDhhZWUxZmQ0MDJkN2ExMSJ9",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "AI-Based Smart Public Safety Surveillance System Using Edge Computing",
+            "tshirt_sizes": "4 members - M",
+            "food_preference": "4 members = Non-Veg",
+            "created_at": "2026-02-19T18:15:51.841615",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "BFA5763D",
+            "user_id": "HF2619",
+            "team_name": "Hackaholics",
+            "college_name": "Sri Sivasubramaniya Nadar College of Engineering",
+            "team_leader_email": "ajay2310871@ssn.edu.in",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Ajay Kanna V",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Dharanikaran S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Kishore Babu K",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Gouthaman V",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJCRkE1NzYzRCIsInVzZXJfaWQiOiJIRjI2MTkiLCJ0ZWFtX25hbWUiOiJIYWNrYWhvbGljcyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Miwic2lnbmF0dXJlIjoiMmQxNWFiM2RhMjNlZWFmNDE1MmVlMDUyOWYzMDkwZDVlYmU3Y2E1Y2I1NWJiM2ZiMjJkZmZiNmM0Nzc2N2U1NiJ9",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "SignMeet: Realtime ISL integrated meeting platform",
+            "tshirt_sizes": "2 members - M\n2 members - L",
+            "food_preference": "3 members - Non-Veg\n1 member - Veg",
+            "created_at": "2026-02-19T18:15:52.001618",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "41A592AD",
+            "user_id": "HF2620",
+            "team_name": "Decrypters",
+            "college_name": "Jain Deemed to be University",
+            "team_leader_email": "kanishka.jb256@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Dharshan S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Sarika G Pawar",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Kanishka J",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Sri Sabari",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI0MUE1OTJBRCIsInVzZXJfaWQiOiJIRjI2MjAiLCJ0ZWFtX25hbWUiOiJEZWNyeXB0ZXJzIiwidGltZXN0YW1wIjoxNzcxNTA1MTUyLCJzaWduYXR1cmUiOiIxMDMwYTg3YjIzNTAxMDAxNzM1MGVmNTU4ZDVmNTZiYzgyZmUwN2IxODFlNDNhYmI2ZTFkYjdiOGMzZmRlNGNmIn0=",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Cloud Noisy Neighbor Detection System",
+            "tshirt_sizes": "3 members\u2014M\n1 member - S",
+            "food_preference": "4 members\u2014non-veg",
+            "created_at": "2026-02-19T18:15:52.168616",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "01B460ED",
+            "user_id": "HF2621",
+            "team_name": "Data Dynamos",
+            "college_name": "Jain Deemed To Be University",
+            "team_leader_email": "dharmanshoo@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Dharmanshoo Chopra",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Abdul Hameed Siddiqui",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Shreyas Kumar N",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Rifah Alam",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIwMUI0NjBFRCIsInVzZXJfaWQiOiJIRjI2MjEiLCJ0ZWFtX25hbWUiOiJEYXRhIER5bmFtb3MiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTIsInNpZ25hdHVyZSI6IjkyMjA3YTdjZTM0NTczN2EyMWY1MTA0Y2FmN2VlMDNlMWM2YWI4MDQwNzhmYTZhN2Y1OGM4MzU3ZjJhZjQyYWIifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "\u201cSentinelForge: AI-Powered Cyber-Physical Threat Detection for Smart Manufacturing MSMEs\u201d",
+            "tshirt_sizes": "1 member - L\n1 member - XL\n2 members - M",
+            "food_preference": "2 members - Veg \n2 member - Non-Veg",
+            "created_at": "2026-02-19T18:15:52.370620",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "3F003B79",
+            "user_id": "HF2622",
+            "team_name": "Code Injectors",
+            "college_name": "R.L Jalappa Institute of Technology",
+            "team_leader_email": "mohammadkaif2266@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Dileep Kumar K",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Mohammed Kaif",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Polineni Akhila",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Adhyanth Kongadi",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzRjAwM0I3OSIsInVzZXJfaWQiOiJIRjI2MjIiLCJ0ZWFtX25hbWUiOiJDb2RlIEluamVjdG9ycyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Miwic2lnbmF0dXJlIjoiZDIzYWQ4ZTg0YzU5Zjg3Yjk3N2ZiMjc1M2VlNWUxYTkxOGM4MDMzZWE5ZTE4NTZjMWNiYTdlOWI3NjI3ZTQ1YyJ9",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Care4Mom & Baby A Digital Platform for Maternal & Child Health in Rural Communities.",
+            "tshirt_sizes": "2 Members - M\n1 Member - L\n1 Member - XS",
+            "food_preference": "4 Members - Non-Veg",
+            "created_at": "2026-02-19T18:15:52.577164",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "880DEC5E",
+            "user_id": "HF2623",
+            "team_name": "Voltariz",
+            "college_name": "SRMIST, Vadapalani, Chennai",
+            "team_leader_email": "bhavithakeerthipati06@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Kolamala Sai Divya",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Keethipati Bhavitha",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Susmitha R",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Tharunyaa S.S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4ODBERUM1RSIsInVzZXJfaWQiOiJIRjI2MjMiLCJ0ZWFtX25hbWUiOiJWb2x0YXJpeiIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Miwic2lnbmF0dXJlIjoiNmY1YjYyMGMzMTYyMGExMmU0ZWQ5YWMzMTVkMGI5YjUyYWYxYzUxYjhlMmVjZmI3MzZlZDQyMzQ2NzIyNWJlYyJ9",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Volta Arcanum - A Smart IoT-Based Electrical Disaster Prevention System.",
+            "tshirt_sizes": "3 members - XL\n  1 member - L",
+            "food_preference": "2 members - Non-Veg \n 2 members - Veg",
+            "created_at": "2026-02-19T18:15:52.772162",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "3633269E",
+            "user_id": "HF2624",
+            "team_name": "\u0b9f\u0bbf\u0b9c\u0bbf\u0b9f\u0bcd\u0b9f\u0bb2\u0bcd \u0b9a\u0b99\u0bcd\u0b95\u0bae\u0bcd",
+            "college_name": "AAA COLLEGE OF ENGINEERING AND TECHNOLOGY",
+            "team_leader_email": "shakthyananthi@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "SHAKTHYANANTHI U A",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "SHANMUGANANTH M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "ANTONY NITHIN A",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "DEVA DHARSHINI M",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzNjMzMjY5RSIsInVzZXJfaWQiOiJIRjI2MjQiLCJ0ZWFtX25hbWUiOiJcdTBiOWZcdTBiYmZcdTBiOWNcdTBiYmZcdTBiOWZcdTBiY2RcdTBiOWZcdTBiYjJcdTBiY2QgXHUwYjlhXHUwYjk5XHUwYmNkXHUwYjk1XHUwYmFlXHUwYmNkIiwidGltZXN0YW1wIjoxNzcxNTA1MTUyLCJzaWduYXR1cmUiOiJlY2FiODViMWM0Yjg0OGFkNTFjNTljYzcxNTBmMjY3NWQwOWNlZmIzNjlmMmNiMTgxMjUxZDYxMDgzMGU4ZGIwIn0=",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "BuDiMa AI",
+            "tshirt_sizes": "1 member - S\n1 member - L\n1 member - XL\n1 member - XXL",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:52.945682",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "2BE3F839",
+            "user_id": "HF2625",
+            "team_name": "Team Electro",
+            "college_name": "SIMATS Engineering",
+            "team_leader_email": "j54609802@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Chakradhar peela",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Sandip",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sharvesh",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Jaganathan",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIyQkUzRjgzOSIsInVzZXJfaWQiOiJIRjI2MjUiLCJ0ZWFtX25hbWUiOiJUZWFtIEVsZWN0cm8iLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTMsInNpZ25hdHVyZSI6ImU5MmZkY2ZjMTRjYzUyMjZjZDY2N2M1YTM5ODAxOWY5ZTZjYWJlNWFmZGUxNWJmN2IxYTlmNzhlZjMwYTk0ODMifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Project A.R.E.S. (Autonomous Robotic\nEnvironmental Sentinel): A LiDAR-Guided\nPlatform for Multi-Threat Industrial Mitigation",
+            "tshirt_sizes": "2- L\n1- XXL\n1-",
+            "food_preference": "3 -- Non veg\n1--veg",
+            "created_at": "2026-02-19T18:15:53.147905",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "974ECB26",
+            "user_id": "HF2626",
+            "team_name": "Bover",
+            "college_name": "SRM Institute of Science and Technology",
+            "team_leader_email": "venuvignesh4894@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Akash G",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Venu Vignesh S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Harish S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Mayank P",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5NzRFQ0IyNiIsInVzZXJfaWQiOiJIRjI2MjYiLCJ0ZWFtX25hbWUiOiJCb3ZlciIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Mywic2lnbmF0dXJlIjoiNThhNzg5N2FjOWI3NWM0ODdjZDAxZjdiNzllNWQyODkwZDVjN2NhNzNkNzE0OWZkNjc5MTU0YjM0NjJkODE2NyJ9",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Disaster Management Rover",
+            "tshirt_sizes": "1 member - XXL, 2 members - XL, 1 member - M",
+            "food_preference": "4 member - Non Veg",
+            "created_at": "2026-02-19T18:15:53.328468",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "31304144",
+            "user_id": "HF2627",
+            "team_name": "AI Dreamer 2.o",
+            "college_name": "EGS Pillay Engineering College",
+            "team_leader_email": "aidsdarshana@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "M. Jose Priyadharshini",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "K. Jaya Dhurga",
+                    "position": "Member 2",
+                    "member_id": 2
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzMTMwNDE0NCIsInVzZXJfaWQiOiJIRjI2MjciLCJ0ZWFtX25hbWUiOiJBSSBEcmVhbWVyIDIubyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Mywic2lnbmF0dXJlIjoiODFiZjRmYWRhNTZhMDU4YzlhYjYxNzQ3YTMxMWQxZTllMjZkYjBiYmQxNWJiNjNjMTc4MjRkNzU5ZjhlN2QxMSJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "AI-POWERED RESEARCH LIFECYCLE ASSISTANT: AUTOMATING ACADEMIC RESEARCH FROM LITERATURE DISCOVERY TO PUBLICATION",
+            "tshirt_sizes": "2 members - XXL\n1 members - XL",
+            "food_preference": "2 members - Non-Veg \n 1 member - Veg",
+            "created_at": "2026-02-19T18:15:53.497472",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "EE9DE4B4",
+            "user_id": "HF2628",
+            "team_name": "CODE AVENGERS",
+            "college_name": "Sree Sakthi Engineering College,Karamadai,Coimbatore",
+            "team_leader_email": "its.santhz@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "SAKTHINATH S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "PRAVEEN R",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "SANTHOSH S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "RETHEESH R K",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJFRTlERTRCNCIsInVzZXJfaWQiOiJIRjI2MjgiLCJ0ZWFtX25hbWUiOiJDT0RFIEFWRU5HRVJTIiwidGltZXN0YW1wIjoxNzcxNTA1MTUzLCJzaWduYXR1cmUiOiIxM2Q0OTE1MzUyZGVmODc0ZTQ1MmIxMmY4MmY1N2JiZTIxOTQyM2M4MGQyOTc0YWZiNTFlZmRhMGUzMDllYzZmIn0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "GOOD HEALTH AND WELL BEING",
+            "tshirt_sizes": "1 MEMBER-XL\n3 MEMBERS-L",
+            "food_preference": "4 MEMBERS-NON VEG",
+            "created_at": "2026-02-19T18:15:53.673466",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "55389BE6",
+            "user_id": "HF2629",
+            "team_name": "pesu_techies",
+            "college_name": "PES UNIVERSITY",
+            "team_leader_email": "snehasuresh358@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Sneha",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Pratham",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Samrudha",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Samarth",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI1NTM4OUJFNiIsInVzZXJfaWQiOiJIRjI2MjkiLCJ0ZWFtX25hbWUiOiJwZXN1X3RlY2hpZXMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTMsInNpZ25hdHVyZSI6ImRjMmNhMDExMDcwZWVmYmY2OTVmODg1ODFkMGRhM2YzZDBkNTQyM2NhMzVlOWM2OTFiZjUwNzQ0Zjc0MTA1NzAifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "\"BuildSense AI\" - Intelligent Construction Site Optimization Platform",
+            "tshirt_sizes": "3 members - L\n1 members - M",
+            "food_preference": "3 members non veg\n1 memeber veg",
+            "created_at": "2026-02-19T18:15:53.856000",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "92771F4A",
+            "user_id": "HF2630",
+            "team_name": "Avisura",
+            "college_name": "Kalasalingam Academy of Research & Education",
+            "team_leader_email": "vathithyaramaa@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "V Athithya Ramaa",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Yuvej Kumar",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Adithya",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Vudugundla Revathi",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5Mjc3MUY0QSIsInVzZXJfaWQiOiJIRjI2MzAiLCJ0ZWFtX25hbWUiOiJBdmlzdXJhIiwidGltZXN0YW1wIjoxNzcxNTA1MTU0LCJzaWduYXR1cmUiOiIzMzMxMTU5MDQ5OWRmNmRmOTVmMmI1ZDhlNzRmZDljNGUzMTdmNmM0MDUzYmU5NjdhMGQwMzZmNTkxMmY4MWRjIn0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "D-Twin",
+            "tshirt_sizes": "2 members - XXL\n1 member - L\n1 member - M",
+            "food_preference": "3 members - Non-Veg \n1 member - Veg",
+            "created_at": "2026-02-19T18:15:54.069997",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "ED965113",
+            "user_id": "HF2631",
+            "team_name": "4 Kiddos",
+            "college_name": "PES University",
+            "team_leader_email": "umeshhrishikesh@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Hrishikesh U",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "J Guruprasad",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Jayesh M Kotian",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Jayanth Gowda",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJFRDk2NTExMyIsInVzZXJfaWQiOiJIRjI2MzEiLCJ0ZWFtX25hbWUiOiI0IEtpZGRvcyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1NCwic2lnbmF0dXJlIjoiNGMzZWY5MDBiYWYxNjlmM2Q5MDlmNGU3MjAzZTA2YjgzOTdmY2JlZjJkNDk4MDUxMDkwYzFiZTU0ZTJhZGVkZiJ9",
+            "project_domain": "SDG 13 : Climate Action",
+            "project_title": "ML based solution that uses satellite and climate data to predict wildfires",
+            "tshirt_sizes": "2 members - M\n2 members - L",
+            "food_preference": "4 members - Veg",
+            "created_at": "2026-02-19T18:15:54.265993",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "AA84D1DF",
+            "user_id": "HF2632",
+            "team_name": "Tech Bees",
+            "college_name": "Saranathan College of Engineering",
+            "team_leader_email": "mirudhulachandrasekaran27@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Mirudhula C",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Mirudhula C",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Devadharshini I",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Aishwarya N",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJBQTg0RDFERiIsInVzZXJfaWQiOiJIRjI2MzIiLCJ0ZWFtX25hbWUiOiJUZWNoIEJlZXMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTQsInNpZ25hdHVyZSI6ImY4OGZiMDAwZTM2MTYwY2E5MTAxNTZkNjUyMTdhY2NiOTdkNjhiZjk3ODU3YmM4NzY4NTBhODI5MDE4ZGE4ZmEifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Service Shadow Map: Identifying Silent Failures in Public Service Delivery",
+            "tshirt_sizes": "4 members - S",
+            "food_preference": "3 members - Non-Veg\n1 member - Veg",
+            "created_at": "2026-02-19T18:15:54.436999",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "55E333EA",
+            "user_id": "HF2633",
+            "team_name": "404 Error",
+            "college_name": "Kalasalingam Academy of Research and Education",
+            "team_leader_email": "pachigollaabhishek05@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Pachigolla Abhishek",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Balla Jaideep",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Mulakala Mallikarjuna Rao",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Chintala Venkata Reddy",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI1NUUzMzNFQSIsInVzZXJfaWQiOiJIRjI2MzMiLCJ0ZWFtX25hbWUiOiI0MDQgRXJyb3IiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTQsInNpZ25hdHVyZSI6ImEyYmZmNzMwZGVmMjY3NzRlZDE5YzlmZjJlOTFjMDhiNWFkMjEzZWM3NzQ0ODNlMjExN2ZkNGU2YWZkNjExZDkifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Evolve 360",
+            "tshirt_sizes": "2 members - L,2 members - M",
+            "food_preference": "1 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:54.639997",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "294DE413",
+            "user_id": "HF2634",
+            "team_name": "Zyranav",
+            "college_name": "Kongunadu College Of Engineering and Technology",
+            "team_leader_email": "sanjaysangsai@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Sangsai S T",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Abinithi S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Heebert Roshan T",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Naresh P",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIyOTRERTQxMyIsInVzZXJfaWQiOiJIRjI2MzQiLCJ0ZWFtX25hbWUiOiJaeXJhbmF2IiwidGltZXN0YW1wIjoxNzcxNTA1MTU0LCJzaWduYXR1cmUiOiJlZjFmOGM3ZmMwYTYzZGJkY2RlZDAxZDAwMTcyNGU3M2Q1MjU2YWQzNDI0Y2EyMDA0NGVlZTViYTg1OTlmOTdkIn0=",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "A Cognitive Handheld Navigation System for GNSS-Denied and Contested Environments",
+            "tshirt_sizes": "2 members - S\n2 members - M",
+            "food_preference": "4 Members - Non - Veg",
+            "created_at": "2026-02-19T18:15:54.855512",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "4E1CB747",
+            "user_id": "HF2635",
+            "team_name": "NexResilience",
+            "college_name": "PSNA College Of Engineering And Technology",
+            "team_leader_email": "2007kavinkarthik@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Kavin Karthik A",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Balaji J",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Athishpandi J",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Rajeshwari R",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI0RTFDQjc0NyIsInVzZXJfaWQiOiJIRjI2MzUiLCJ0ZWFtX25hbWUiOiJOZXhSZXNpbGllbmNlIiwidGltZXN0YW1wIjoxNzcxNTA1MTU1LCJzaWduYXR1cmUiOiI5ZTMwYzMzZmYzMTZkODVjMTM3MGY4MTcyYjUxOTM2NzU1NDE0ZTg3ZThlMzMzYmI5ODlkYjFjMTZkMzMwNjhjIn0=",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Digital passport - Unlock Your Academic World Digitally",
+            "tshirt_sizes": "1 member - M\n1 member - L\n1 member - XL\n1 member -XXL",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:55.030513",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "BCC068CC",
+            "user_id": "HF2636",
+            "team_name": "Zenith",
+            "college_name": "Kongunadu College of Engineering and Technology, Thottiam,Trichy",
+            "team_leader_email": "preethavarsne@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Soundarya N",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Sibiya N S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Varsne S P",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Suha K",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJCQ0MwNjhDQyIsInVzZXJfaWQiOiJIRjI2MzYiLCJ0ZWFtX25hbWUiOiJaZW5pdGgiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTUsInNpZ25hdHVyZSI6IjlhZjIwYmNhOTdjNDRhMTUwNGI3M2EwMWIyN2ZiZTc4OGIwYzIwMzk2YzdhOWM5ODc3NTE3OWU3MTkzZDFhYjIifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "ADAPTIVE STUDENT SUPPORT SYSTEM (ASSS)",
+            "tshirt_sizes": "1 member - L,2 members - XL,1 member - XXL",
+            "food_preference": "3 members - Non -veg, 1 Member - veg",
+            "created_at": "2026-02-19T18:15:55.202514",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "2CFE02C6",
+            "user_id": "HF2637",
+            "team_name": "Gen z warrior's",
+            "college_name": "Sree sakthi engineering college",
+            "team_leader_email": "srimoorthi9140@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "P SRIMOORTHY",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "D NIKIL",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "R NIRMALRAJ",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "L ROHITH",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIyQ0ZFMDJDNiIsInVzZXJfaWQiOiJIRjI2MzciLCJ0ZWFtX25hbWUiOiJHZW4geiB3YXJyaW9yJ3MiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTUsInNpZ25hdHVyZSI6IjBkMjBiYmEyNjcxODVmZjRjYzVkODM3N2M5ZjhkZjRkMjMyOWI0YzE0MzVmY2VmYmIwODhkZTg5YjQ2ZmNhNDEifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Good health and well being",
+            "tshirt_sizes": "3 members -M\n1 member-S",
+            "food_preference": "4 members -non-veg",
+            "created_at": "2026-02-19T18:15:55.406516",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "980D1490",
+            "user_id": "HF2638",
+            "team_name": "Innov8tors",
+            "college_name": "Sri Sivasubramania Nadar College of Enginnering",
+            "team_leader_email": "mail.nsuriya01@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Suriya N",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Pranavah Varun M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sarvesh Narayanan",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Aathithya NM",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5ODBEMTQ5MCIsInVzZXJfaWQiOiJIRjI2MzgiLCJ0ZWFtX25hbWUiOiJJbm5vdjh0b3JzIiwidGltZXN0YW1wIjoxNzcxNTA1MTU1LCJzaWduYXR1cmUiOiI1NDViYjE0OTdmMWU3ZjE0ZmJjN2Q3NDI4OTU1MjYwY2I4ZWUwMTM2NTU2OTQ2NmJjMzVkMjg1Nzk4MTg3ZWE0In0=",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "NeuroLearn \u2014 AI Study Intelligence",
+            "tshirt_sizes": "4 members - XL",
+            "food_preference": "3 members - Non-Veg \n1 member - Veg",
+            "created_at": "2026-02-19T18:15:55.591479",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "DB17AE72",
+            "user_id": "HF2639",
+            "team_name": "UnCut Gems",
+            "college_name": "Saranathan College of Engineering",
+            "team_leader_email": "aid278055@saranathan.ac.in",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "LOGESHWARAN R",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "HARISH M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "MATHISHWARAN R A",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "ISAAC NATHANAEL R",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEQjE3QUU3MiIsInVzZXJfaWQiOiJIRjI2MzkiLCJ0ZWFtX25hbWUiOiJVbkN1dCBHZW1zIiwidGltZXN0YW1wIjoxNzcxNTA1MTU1LCJzaWduYXR1cmUiOiI0YTlkMWY3ZmRkNzU3MWEyYzcyYWNkNzc1OWQ0ZDVlNjdkNWI1OGNmYTU2YzA2Mzc5NDljYWI2NjRjN2YxM2E3In0=",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Upflux : An Intelligent Learning Companion for Concept \nMastery, Focus Management, and Student Well-Being",
+            "tshirt_sizes": "2 members - L \n2 members - XL",
+            "food_preference": "4 members - Non-veg",
+            "created_at": "2026-02-19T18:15:55.788481",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "C0828735",
+            "user_id": "HF2640",
+            "team_name": "MEDCONNECT",
+            "college_name": "Mepco Schlenk Engineering College",
+            "team_leader_email": "vishwaat27@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Vishwaa T",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Ruthrakumar S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Yuvaraj R",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Yuvaraj T",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDMDgyODczNSIsInVzZXJfaWQiOiJIRjI2NDAiLCJ0ZWFtX25hbWUiOiJNRURDT05ORUNUIiwidGltZXN0YW1wIjoxNzcxNTA1MTU1LCJzaWduYXR1cmUiOiIxZTYxMDUwNzRhY2FjN2YwN2E0YzRkYjE2NDM5OTcwZmY4NDgzOTg5NTc5MjYxN2I4MjNjNTI1NGJiNzczNzdkIn0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "CORED: A Context-Aware Platform for Reduction of Cognitive Overload in Medication Decisions",
+            "tshirt_sizes": "1 member - L\n2 members - XL\n1 member - XXL",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:55.972068",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "DEBB0B27",
+            "user_id": "HF2641",
+            "team_name": "L4",
+            "college_name": "PSG College of Technology",
+            "team_leader_email": "encyclopedia748@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Dinesh T V",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Prem Dharshan D",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Ajay H",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Mithun Karthick V",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJERUJCMEIyNyIsInVzZXJfaWQiOiJIRjI2NDEiLCJ0ZWFtX25hbWUiOiJMNCIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Niwic2lnbmF0dXJlIjoiMmFmMThiN2Y2ZDQzMWUxYWJhYTY0MjEwOTA3OGM0OTA1YjgyNWRiZDE1YThiM2NkNDRkMmZhNzdhOGIzZGFlNCJ9",
+            "project_domain": "SDG 13 : Climate Action",
+            "project_title": "FLARE - Fast Logistics Assignment and Resource Engine",
+            "tshirt_sizes": "2 members - L\n1 member - M\n1 member - XL",
+            "food_preference": "3 members - Non-Veg\n1 member - Veg",
+            "created_at": "2026-02-19T18:15:56.157585",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "F5AD9724",
+            "user_id": "HF2642",
+            "team_name": "Circuit Breakers",
+            "college_name": "Mepco Schlenk Engineering College, Sivakasi",
+            "team_leader_email": "arunsanjeev444@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "ARUN SANJEEV .P",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "HARI KRISHNAN .K",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "S. K. Akash Raj",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJGNUFEOTcyNCIsInVzZXJfaWQiOiJIRjI2NDIiLCJ0ZWFtX25hbWUiOiJDaXJjdWl0IEJyZWFrZXJzIiwidGltZXN0YW1wIjoxNzcxNTA1MTU2LCJzaWduYXR1cmUiOiIwODdkYjcyNjhmYjZmZDE4ZTdhYTA2MmVmYTdjOGE3NWI5ZTA3ZmUzOGQ2ZDkxNDgxMTFhN2IxM2IzZDUyYWYxIn0=",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "ROS 2\u2013Enabled Bipedal Humanoid Tutor Robot for Affordable Rural Education",
+            "tshirt_sizes": "1 member - XL\n2 members - L",
+            "food_preference": "2 members - Non-Veg\n1 member - Veg",
+            "created_at": "2026-02-19T18:15:56.327583",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "A77ECA94",
+            "user_id": "HF2643",
+            "team_name": "Hack squad",
+            "college_name": "Mahendra Engineering College",
+            "team_leader_email": "dhanushree3105@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Dhivya dharshini M",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Janani V P",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Dhanushree S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Anushree A U",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJBNzdFQ0E5NCIsInVzZXJfaWQiOiJIRjI2NDMiLCJ0ZWFtX25hbWUiOiJIYWNrIHNxdWFkIiwidGltZXN0YW1wIjoxNzcxNTA1MTU2LCJzaWduYXR1cmUiOiJmYzZiMTQ5YTYzMTU4YTllZDRjODczM2VkNjg0YTYyOTNmYTliNGZlNWI4Y2YyZjk0MzYyOTZhZDQ4ZWMwMTRjIn0=",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "SheShield Navigator - Safe Route Finder For Women",
+            "tshirt_sizes": "1 member- XL\n\n1 member- XXL\n\n2 member- M",
+            "food_preference": "4 members - Non-veg",
+            "created_at": "2026-02-19T18:15:56.511588",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "8541AD57",
+            "user_id": "HF2644",
+            "team_name": "FIXPERTS",
+            "college_name": "Kongu Engineering college",
+            "team_leader_email": "bhavishnakr@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Bhavishna K R",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Arnald S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Gowtham L",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Darshana P S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4NTQxQUQ1NyIsInVzZXJfaWQiOiJIRjI2NDQiLCJ0ZWFtX25hbWUiOiJGSVhQRVJUUyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Niwic2lnbmF0dXJlIjoiMjgyYmQyNzU2ODYxNWE3NWE2MzMwYTU5YjAzMDI5ZDk0OTRkZGFjMWU3MjZjMzUzMzNiNzUxZDYzOGE0YzgzZiJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Social Networking for Professionals: An AI-Driven Mentorship \n& Career Growth Ecosystem",
+            "tshirt_sizes": "2 members -S\n1 members -L\n1 member -xl",
+            "food_preference": "4 members -Nonveg",
+            "created_at": "2026-02-19T18:15:56.692555",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "B203BCE3",
+            "user_id": "HF2645",
+            "team_name": "Reality.exe",
+            "college_name": "Saranathan college of engineering",
+            "team_leader_email": "krithikpandian7@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Krithik S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Keya shanika",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Janani",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Kalai selvi",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJCMjAzQkNFMyIsInVzZXJfaWQiOiJIRjI2NDUiLCJ0ZWFtX25hbWUiOiJSZWFsaXR5LmV4ZSIsInRpbWVzdGFtcCI6MTc3MTUwNTE1Niwic2lnbmF0dXJlIjoiYjU0M2I1NGEzNDRlNDkwYjc0YmUyZGU0MDM0MjExYThlZjQ1N2QyNjE2YzY5NGExOTVkYWFiODU0NmI3MjZlYiJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "VR Chemistry Lab",
+            "tshirt_sizes": "2 members - S\n1 member - L\n1 member - XXL",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:56.866138",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "008CCADE",
+            "user_id": "HF2646",
+            "team_name": "Wandering Coders",
+            "college_name": "SRMIST Ramapuram Chennai",
+            "team_leader_email": "sanjivshanmugasundaram@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Sanjiv A S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Akash S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Mohith Hariharan S S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Harish S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIwMDhDQ0FERSIsInVzZXJfaWQiOiJIRjI2NDYiLCJ0ZWFtX25hbWUiOiJXYW5kZXJpbmcgQ29kZXJzIiwidGltZXN0YW1wIjoxNzcxNTA1MTU3LCJzaWduYXR1cmUiOiJlYWUyOTRkZmU3MDYxNzdlZTMxZGZjNjQxNjc2NTkzNGYzZGQ5ZGIyMmQ1YWE3ZjI4YTI1Y2RjNDIyZGZhNjhkIn0=",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "Efficient Solar Modules",
+            "tshirt_sizes": "3 members - XL\n1 member - M",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:57.040196",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "6B086A09",
+            "user_id": "HF2647",
+            "team_name": "SKILLNOVA",
+            "college_name": "SRI SAIRAM ENGINEERING COLLEGE",
+            "team_leader_email": "sec23ec063@sairamtap.edu.in",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "LALITH NARAYANAN N",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "SANJAY S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "BUVANESHWARAN K",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "VISHWAJET KUMAR JR",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI2QjA4NkEwOSIsInVzZXJfaWQiOiJIRjI2NDciLCJ0ZWFtX25hbWUiOiJTS0lMTE5PVkEiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTcsInNpZ25hdHVyZSI6IjQzZGU2YTI2N2VlYzQ4ZjIxYmMzMzViMWQ1ZTE4Y2JjMzM0NDY5ZGNhZTNhMWRhZTQ1MDIxOWJmMDI1YjYyNDYifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "ISCHEAMIC HEART DISEASE DETECTION USING IOT AND MACHINEC LEARNING",
+            "tshirt_sizes": "2 MEMBERS - XL\n1 MEMBER - L\n1 MEMBER - XXL",
+            "food_preference": "4 MEMBERS - NON-VEG",
+            "created_at": "2026-02-19T18:15:57.210183",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "E3BCC7E3",
+            "user_id": "HF2648",
+            "team_name": "Luners",
+            "college_name": "AAA College of Engineering and Technology",
+            "team_leader_email": "renugam1908@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "P.Rohit Raam",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "R.Muthuraj",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "S.Abinesh",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "T. Arun Kumar",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJFM0JDQzdFMyIsInVzZXJfaWQiOiJIRjI2NDgiLCJ0ZWFtX25hbWUiOiJMdW5lcnMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTcsInNpZ25hdHVyZSI6ImI1MDEwYTQ2YmE5NzkwZWZkMWQ1YzQ5MWExNGFhZjlmNDliYjI1YTdiYTk4ZjY4YmRiZjU0YmU2YjQyMzQ4ZDQifQ==",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Anbodu - Compassionate Stewardship App for Inclusive Education",
+            "tshirt_sizes": "1 Member - XXXL\n1 Member - XL\n1 Member - L\n1 Member - M",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:57.384628",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "C7E82846",
+            "user_id": "HF2649",
+            "team_name": "Tech Aura",
+            "college_name": "PSNA COLLEGE OF ENGINEERING AND TECHNOLOGY",
+            "team_leader_email": "rajbala2816@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Petchimuthu A",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Muthuraj R",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Arun kumar T",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "ABINESH S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDN0U4Mjg0NiIsInVzZXJfaWQiOiJIRjI2NDkiLCJ0ZWFtX25hbWUiOiJUZWNoIEF1cmEiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTcsInNpZ25hdHVyZSI6ImIwNWFlNGI2YTY4N2ZmMWY2NWE1YmNjZWJhZGFkYjY2ZGQwOTVkMDVhMDUxYzU5ZjViMzYyMjc5NTE2OGYzY2UifQ==",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "WildGuard AI",
+            "tshirt_sizes": "2 members-L and 2 members-XL",
+            "food_preference": "4 members-non veg",
+            "created_at": "2026-02-19T18:15:57.557624",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "C56CB140",
+            "user_id": "HF2650",
+            "team_name": "Biozen",
+            "college_name": "Vivekananda College of Engineering for Women",
+            "team_leader_email": "agalyabalamurugan2020@gmail.com",
+            "team_size": 3,
+            "team_members": [
+                {
+                    "name": "Agalya B",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Anushri A",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Pooja Sree S",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDNTZDQjE0MCIsInVzZXJfaWQiOiJIRjI2NTAiLCJ0ZWFtX25hbWUiOiJCaW96ZW4iLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTcsInNpZ25hdHVyZSI6IjMyNWI4ZGQxNTJjYTBlZGUxYjc4N2Q4NGFmNTA5ZDU4ODgyZmM0NGVhZmE0NjBjZDE4ZmI3NGE1MWQwY2ZhMDIifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "AI-Enabled Herbal Housefly Vaporizer for Biological Surveillance",
+            "tshirt_sizes": "1 member - M\n1 member - L\n1 member - XL",
+            "food_preference": "3 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:57.730630",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "5F7DCC41",
+            "user_id": "HF2651",
+            "team_name": "The Schlenkians",
+            "college_name": "Mepco Schlenk Engineering College, Sivakasi",
+            "team_leader_email": "banumathin8393_bcs28@mepcoeng.ac.in",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "S K Sornalakshmi",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "T S Dhanusha",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "T Kanya",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "R Gopika",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI1RjdEQ0M0MSIsInVzZXJfaWQiOiJIRjI2NTEiLCJ0ZWFtX25hbWUiOiJUaGUgU2NobGVua2lhbnMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTcsInNpZ25hdHVyZSI6IjUwY2I3ODMwZDgyNzQyMzQxNzVhNDhhMjU5ZTc0NTc1YjNhZTQ0N2MzNzgxNDMxNDg5YWI3N2MxZDg0NTFlNzMifQ==",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "Aqua Nano Sentinel: An IoT-Based Nano E-Waste Detection and Water Purification",
+            "tshirt_sizes": "4 members - XL",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:57.932150",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "9A7E01D2",
+            "user_id": "HF2652",
+            "team_name": "Bug Hunters",
+            "college_name": "DMI COLLEGE OF ENGINEERING",
+            "team_leader_email": "babishek549@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Abishek B",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Narean Karthick M P",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sri Ranjana J",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Jemema J",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5QTdFMDFEMiIsInVzZXJfaWQiOiJIRjI2NTIiLCJ0ZWFtX25hbWUiOiJCdWcgSHVudGVycyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1OCwic2lnbmF0dXJlIjoiZjI1MGY0NDE4MmNmNmY3N2NlYzc4NDEyMWM2MTMxNDFiNGYzZTFiNTlkMTFjYzBiNzU1NGY0NDlmOWNiOWNkMSJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Placement intelligence platform",
+            "tshirt_sizes": "2 members - L\n2 members - M",
+            "food_preference": "3 members - non veg \n1 member - veg",
+            "created_at": "2026-02-19T18:15:58.130402",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "1E245BCC",
+            "user_id": "HF2653",
+            "team_name": "Sparten strikers",
+            "college_name": "Sree sakthi engineering college",
+            "team_leader_email": "irsathirsath020@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Vaisthan",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Boopathy",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Karthikeyan",
+                    "position": "Member 3",
+                    "member_id": 3
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIxRTI0NUJDQyIsInVzZXJfaWQiOiJIRjI2NTMiLCJ0ZWFtX25hbWUiOiJTcGFydGVuIHN0cmlrZXJzIiwidGltZXN0YW1wIjoxNzcxNTA1MTU4LCJzaWduYXR1cmUiOiI2ZjQ5MjNlNzY1ZDFlZGY0ZTAyOTJiM2E5ZDNjZmVmNzNlOThkZTE5MGFlNjE3MDc3NTI0M2IyMzE0OWJhNzU0In0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Good health and well being",
+            "tshirt_sizes": "3 members -M \n1 member -XL",
+            "food_preference": "4 members -non veg \n1 member - veg (optional)",
+            "created_at": "2026-02-19T18:15:58.325404",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "01788A90",
+            "user_id": "HF2654",
+            "team_name": "Techno",
+            "college_name": "Kongunadu college of engineering and technology",
+            "team_leader_email": "gowthamsugavi@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Gowtham k",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Thirukumaran M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Gokul R",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Filbert Joe Winston J",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIwMTc4OEE5MCIsInVzZXJfaWQiOiJIRjI2NTQiLCJ0ZWFtX25hbWUiOiJUZWNobm8iLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTgsInNpZ25hdHVyZSI6ImU2YjRjMzJiYjM1MjkwYmFiNmFmMzIyYTVjZWFlYzY3NzZlMjk2Y2MxYjRhOGMyN2FlMDM5MjllMDQ2MmRhZjUifQ==",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "ESP8266 -Based Portable Fire Detection and Automated Suppression System",
+            "tshirt_sizes": "4 members -L",
+            "food_preference": "4 members -Non-Veg",
+            "created_at": "2026-02-19T18:15:58.509401",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "0D47DD9F",
+            "user_id": "HF2655",
+            "team_name": "Vital Solutions",
+            "college_name": "Mohan Babu University",
+            "team_leader_email": "vamshi242010@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "P.Vamshi",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "S.Greeshma Chowdary",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "S.Srihari",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "P.Praveena",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIwRDQ3REQ5RiIsInVzZXJfaWQiOiJIRjI2NTUiLCJ0ZWFtX25hbWUiOiJWaXRhbCBTb2x1dGlvbnMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTgsInNpZ25hdHVyZSI6IjA3MjQ1YTIzZWJkZGM0YmJhYTk2MDMwZGY5YTRhNThhZTA4NzFiYjZmOGI0MTdiMGI2MTliN2U5MDEyNmFmZDEifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Campus Health Management System",
+            "tshirt_sizes": "2 members - XL\n2 members - L",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:15:58.708402",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "38126AF1",
+            "user_id": "HF2656",
+            "team_name": "Solution Hunters",
+            "college_name": "Kongunadu College of Engineering and Technology",
+            "team_leader_email": "arumugamnandhini17@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "A Adhithya",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "I Athithya",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "S Sudhakar",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "GR Gokulavasan",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzODEyNkFGMSIsInVzZXJfaWQiOiJIRjI2NTYiLCJ0ZWFtX25hbWUiOiJTb2x1dGlvbiBIdW50ZXJzIiwidGltZXN0YW1wIjoxNzcxNTA1MTU4LCJzaWduYXR1cmUiOiIzYjRmMTc3ZmY5NzJlMGIzYmY2ODE0MjA4ZTYwNTE2ZGVjNTA4Mjk2YjZmNDgxZmU0YmRjOTU3NGM5NTg1YjA1In0=",
+            "project_domain": "SDG 13 : Climate Action",
+            "project_title": "SMART BEEKEEPING SYSTEM USING ESP32 FOR RURAL ENTREPRENEURS",
+            "tshirt_sizes": "1 members - 6XL\n2 members - M\n1 members - XL",
+            "food_preference": "4 Members - Non-Veg",
+            "created_at": "2026-02-19T18:15:58.884169",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "D963451F",
+            "user_id": "HF2657",
+            "team_name": "Techkies",
+            "college_name": "Kongunadu College of Engineering and Technology",
+            "team_leader_email": "ksarun709@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Arun K S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Nawin Rathiyn R",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Pavithra D",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Indhuja R",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEOTYzNDUxRiIsInVzZXJfaWQiOiJIRjI2NTciLCJ0ZWFtX25hbWUiOiJUZWNoa2llcyIsInRpbWVzdGFtcCI6MTc3MTUwNTE1OSwic2lnbmF0dXJlIjoiZTgxYzNkMTk2OTM2NGE0YzQxMTAwYzk3YTMzYWY2OTdiODA5YzJmYjNhYjdmYTRhMjVmOWNlMTIyZWI4MmVhZSJ9",
+            "project_domain": "SDG 13 : Climate Action",
+            "project_title": "Cloudburst Early Warning & Alarm System",
+            "tshirt_sizes": "1 Members - XS\n1 Members - S\n2 Members - M",
+            "food_preference": "3 Members - Non- Veg \n1 Members - Veg",
+            "created_at": "2026-02-19T18:15:59.055166",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "31B39B97",
+            "user_id": "HF2658",
+            "team_name": "NovaX",
+            "college_name": "Velalar College of Engineering and Technology, Thindal, Erode",
+            "team_leader_email": "m.joshikadanish@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Akshaya S V",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Eniya P",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Dharshini A",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Joshika M",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzMUIzOUI5NyIsInVzZXJfaWQiOiJIRjI2NTgiLCJ0ZWFtX25hbWUiOiJOb3ZhWCIsInRpbWVzdGFtcCI6MTc3MTUwNTE1OSwic2lnbmF0dXJlIjoiN2EyMWRkYzA0ZTdhMmFkYjUzMzIzODQzM2M3MTMzODYxMTY2Yjk2YzcxYjQxMzYxMTY1Mzg5MjhmZGM0ZTdlMCJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "EduSense AI : Predictive Learning Intelligence System",
+            "tshirt_sizes": "2 members - XS\n1 member- S\n1 member- XL",
+            "food_preference": "4 members -Non Veg",
+            "created_at": "2026-02-19T18:15:59.230174",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "CAA7D943",
+            "user_id": "HF2659",
+            "team_name": "Quantum dots",
+            "college_name": "DR.MCET",
+            "team_leader_email": "sanjayalfa07@gmail.com",
+            "team_size": 2,
+            "team_members": [
+                {
+                    "name": "ARUNDHARSAUN A",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Yaswant s.s",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "SANTHOASH U.Y",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "AJAY KUMAR",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDQUE3RDk0MyIsInVzZXJfaWQiOiJIRjI2NTkiLCJ0ZWFtX25hbWUiOiJRdWFudHVtIGRvdHMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTksInNpZ25hdHVyZSI6ImMyZTM1Nzk4ZWU5YzY5NzRmYTIyZTMzMmUyMmI3ODFjYjUwMzczZDdhZWY1MDBlY2M0ZDg5NDk5ZDEwODQ2ZDMifQ==",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "SOLAR POWERED RFID BASED MILK VENDING MACHINE FOR RURAL AGRICULTURAL FARMERS",
+            "tshirt_sizes": "4 Members -L",
+            "food_preference": "",
+            "created_at": "2026-02-19T18:15:59.425175",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "9E19441B",
+            "user_id": "HF2660",
+            "team_name": "Team conserve",
+            "college_name": "Jyothi engineering college",
+            "team_leader_email": "as98462312@gmail.com",
+            "team_size": 2,
+            "team_members": [
+                {
+                    "name": "Aswin MJ",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Amrutha Suresh",
+                    "position": "Member 2",
+                    "member_id": 2
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI5RTE5NDQxQiIsInVzZXJfaWQiOiJIRjI2NjAiLCJ0ZWFtX25hbWUiOiJUZWFtIGNvbnNlcnZlIiwidGltZXN0YW1wIjoxNzcxNTA1MTU5LCJzaWduYXR1cmUiOiI5OTdkNzEyZmZhNjEzN2NmOWMxOWNiZjE3YjdlNzEzNTUyOTAwYWM5Mjk4YzdiMDY3YWFjNWQzNTIxNjY5NWFiIn0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "She Cycle",
+            "tshirt_sizes": "2 members- M",
+            "food_preference": "2 members- Non- Veg",
+            "created_at": "2026-02-19T18:15:59.636934",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "357EB0A5",
+            "user_id": "HF2661",
+            "team_name": "Starkware",
+            "college_name": "Saranathan college of engineering",
+            "team_leader_email": "shivanisriram1629@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "SHIVANI.S.G",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "DINESHWAR.R",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "SATHEESHWARAN.K",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "DHANANJEYAN.M",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzNTdFQjBBNSIsInVzZXJfaWQiOiJIRjI2NjEiLCJ0ZWFtX25hbWUiOiJTdGFya3dhcmUiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNTksInNpZ25hdHVyZSI6Ijg4ZDNhODNmNjYwN2ViMmM3NTFmZGVlNGViNWY5MzY0NDJkNjNiOWRiMTc0NjliYTQyODY0NDI4OTIwNmNhOTAifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Machinery Failures",
+            "tshirt_sizes": "4 members -L",
+            "food_preference": "3 members -Non-veg\n1 memeber -veg",
+            "created_at": "2026-02-19T18:15:59.839961",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "B5580904",
+            "user_id": "HF2662",
+            "team_name": "Quantum Hackers",
+            "college_name": "Sree sakthi engineering College",
+            "team_leader_email": "pbharathgowda2@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Bharath.P",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "D.DHANUSH",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "DHARUMAN.K",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Dharun.s",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJCNTU4MDkwNCIsInVzZXJfaWQiOiJIRjI2NjIiLCJ0ZWFtX25hbWUiOiJRdWFudHVtIEhhY2tlcnMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNjAsInNpZ25hdHVyZSI6ImQwZWIzZTRjMDdhMzdkOWNiNWEzNzNjYzE4YjQ5M2JlYTA2N2VlMzczODA2NmNlMTYxODk5OTNhYzg1Njk3NGUifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Good health and  well being",
+            "tshirt_sizes": "2 members-XL\n2 member-m",
+            "food_preference": "4 member -non-veg",
+            "created_at": "2026-02-19T18:16:00.022513",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "BE4C75E2",
+            "user_id": "HFI2602",
+            "team_name": "Team D.N.A",
+            "college_name": "K. Ramakrishnan College Of Engineering",
+            "team_leader_email": "navindecr23@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Allwin E",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Dharsan Thangarasu",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Aishwarya Guhanathan",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Navin Prasath R",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJCRTRDNzVFMiIsInVzZXJfaWQiOiJIRkkyNjAyIiwidGVhbV9uYW1lIjoiVGVhbSBELk4uQSIsInRpbWVzdGFtcCI6MTc3MTUwNTE2MCwic2lnbmF0dXJlIjoiYmVjMjlkNzJmM2FiZjg4MzkyZjhmNGRiMDY5OTcxZTA0NTYyYTFlY2E4ZDM2MDU3YzQyODA4MDczN2I3NjQ3MSJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Placement-Pre-Pro",
+            "tshirt_sizes": "1 member - L\n2 members - M\n1 member - S",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:16:00.212515",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "774E0963",
+            "user_id": "HFI2603",
+            "team_name": "EcoSpark",
+            "college_name": "K Ramakrishna college of Engineering",
+            "team_leader_email": "ash98906@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Jayaprakash T",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "John adan J R",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sanjai S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Naviya K B",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI3NzRFMDk2MyIsInVzZXJfaWQiOiJIRkkyNjAzIiwidGVhbV9uYW1lIjoiRWNvU3BhcmsiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNjAsInNpZ25hdHVyZSI6ImEwMmM4YjQwYzZmOGRlOGY5ZWRiYjFkMWNmM2JmOGUwNzgwMTM3YmM0ZTZkZjg0ZWJhMWY2MzdkMjI3NjMwOWIifQ==",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "Sustainable Urban Waste and Sewage Intelligence System",
+            "tshirt_sizes": "1 members - L\n2 members - M\n1 members - S",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:16:00.417516",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "D7E9A0F6",
+            "user_id": "HFI2604",
+            "team_name": "STARKS",
+            "college_name": "K. Ramakrishnan College of Engineering",
+            "team_leader_email": "aadhithb586@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "AADHITH B",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "AJEAAY VISHWHA VS",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "BHARATHI MOHAN S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "KARTHIKEYAN S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJEN0U5QTBGNiIsInVzZXJfaWQiOiJIRkkyNjA0IiwidGVhbV9uYW1lIjoiU1RBUktTIiwidGltZXN0YW1wIjoxNzcxNTA1MTYwLCJzaWduYXR1cmUiOiI1ZTJhZDU1YjgwNTZkMzkwZGY0NDY2MGVmM2U5OWZlMTZiZjA0MmNiNGIwMDc2YTk3Yjc3ZDk5MjEwMmNkY2IwIn0=",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Smart Health Risk Prediction System using Machine Learning",
+            "tshirt_sizes": "1 members - XL\n 3 members - M",
+            "food_preference": "3 members - Non-Veg \n 1 member - Veg",
+            "created_at": "2026-02-19T18:16:00.591516",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "806AD4C3",
+            "user_id": "HFI2605",
+            "team_name": "Code Comets",
+            "college_name": "M.Kumarasamy College of Engineering",
+            "team_leader_email": "arshvel@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Arshitha S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Vaishnavi P A",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sabari K",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Madhan M",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiI4MDZBRDRDMyIsInVzZXJfaWQiOiJIRkkyNjA1IiwidGVhbV9uYW1lIjoiQ29kZSBDb21ldHMiLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNjAsInNpZ25hdHVyZSI6IjU0NDg0NzAwZmQ3MzY4M2Y2MDVlNjBjNzY0NDJmNTI0OWEyNDQyODg0ZjNiMjE1YzVjM2IxNDRkM2YzNThjZjQifQ==",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Skillsync - Unlock the Right Job for You",
+            "tshirt_sizes": "2 members - XL, 1 member - L, 1 member - M",
+            "food_preference": "2 members - Veg, 2 members - Non- Veg",
+            "created_at": "2026-02-19T18:16:00.781518",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "FB4D1485",
+            "user_id": "HFI2606",
+            "team_name": "JackSparrow",
+            "college_name": "M Kumarasamy College of Engineering",
+            "team_leader_email": "shreedhanu2412@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "PADMASHRI J",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "KAARTHIK VARSHAN S U",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "KARTHIKEYAN T",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "DHANUSHREE R S",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJGQjREMTQ4NSIsInVzZXJfaWQiOiJIRkkyNjA2IiwidGVhbV9uYW1lIjoiSmFja1NwYXJyb3ciLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNjAsInNpZ25hdHVyZSI6ImU1Y2JjNTAzNTUyOWU5MzMzNTRiOGFjMTQ2MDY3N2VhNmNkMTM2ZjVmNmEyZDJkYzM3ZGI4MjI3MmQ5MDBmMGUifQ==",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "Brain Care AI \u2013 Smart MRI-Based Brain Tumour Diagnosis System",
+            "tshirt_sizes": "2 members - XL\n1 member - L\n1 member - M",
+            "food_preference": "3 members - non veg \n1 member - veg",
+            "created_at": "2026-02-19T18:16:00.979082",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "F833294B",
+            "user_id": "HFI2607",
+            "team_name": "Ctrl+Shift+Win",
+            "college_name": "M. Kumarasamy College of Engineering",
+            "team_leader_email": "angujayalakshmi2005@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Angu Jayalakshmi R",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Thirukumaran P S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Vaishnavi M",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Menaka J",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJGODMzMjk0QiIsInVzZXJfaWQiOiJIRkkyNjA3IiwidGVhbV9uYW1lIjoiQ3RybCtTaGlmdCtXaW4iLCJ0aW1lc3RhbXAiOjE3NzE1MDUxNjEsInNpZ25hdHVyZSI6ImM5YmRiZmQxNzM4N2MzOWI0Y2JhZDdhNDE2NmNlMzBjMzgxODBjYjAzOGU1NDJjMDk3YThjMjExMTc5MjQyNTUifQ==",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "Trayo: A Smart Digital Canteen Platform",
+            "tshirt_sizes": "3 members - M\n1 member - XL",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:16:01.196082",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "C78D8A93",
+            "user_id": "HFI2608",
+            "team_name": "Almost Engineers",
+            "college_name": "K Ramakrishnan College Of Engineering",
+            "team_leader_email": "aimlstudent13@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "TARUN G",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "SURIYA KS",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "MOHAMED ARSHATH A",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "NITHIN MATHEW K",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDNzhEOEE5MyIsInVzZXJfaWQiOiJIRkkyNjA4IiwidGVhbV9uYW1lIjoiQWxtb3N0IEVuZ2luZWVycyIsInRpbWVzdGFtcCI6MTc3MTUwNTE2MSwic2lnbmF0dXJlIjoiZTI2ODc3MGUzYTMyNWM0ZDJmNGU1MWViNTU3NDUxMTVhYjIzMGVhYjUyY2VjMmI3NzU0ZjJhYTA4ODg4NzcwOCJ9",
+            "project_domain": "SDG 9 : Industry, Innovation and Infrastructure",
+            "project_title": "SECURE",
+            "tshirt_sizes": "2 members -M,\n1 member - L\n1 member -XL",
+            "food_preference": "3 members - Non-Veg \n 1 member - Veg",
+            "created_at": "2026-02-19T18:16:01.401088",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "279518E7",
+            "user_id": "HFI2609",
+            "team_name": "Ferrancrypts",
+            "college_name": "M Kumaraswamy College Of Engineering",
+            "team_leader_email": "kevinsivraj2006@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Kevin Siv Raj M S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Neyashri A",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Nithyasri S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Kaviyaa joshi B",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIyNzk1MThFNyIsInVzZXJfaWQiOiJIRkkyNjA5IiwidGVhbV9uYW1lIjoiRmVycmFuY3J5cHRzIiwidGltZXN0YW1wIjoxNzcxNTA1MTYxLCJzaWduYXR1cmUiOiIwNmViMzkwZTE2MzM3OTI5YmYwNDc1YmZmYjMwNzI5ZjA0MjdlMDY5ODU1ZWU3YjIzZDExZDlmNTk2MzZmZTQxIn0=",
+            "project_domain": "SDG 11 : Sustainable Cities and Communities",
+            "project_title": "CivicConnet",
+            "tshirt_sizes": "3 members - S\n1 member - L",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:16:01.579080",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "33C6A35B",
+            "user_id": "HFI2610",
+            "team_name": "CODE X",
+            "college_name": "K.RAMAKRISHNAN COLLEGE OF ENGINEERING",
+            "team_leader_email": "ragul08l03l2007@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Ragul P",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Prajeeth M",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Sri kailash S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Visvaeswaraiya J",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIzM0M2QTM1QiIsInVzZXJfaWQiOiJIRkkyNjEwIiwidGVhbV9uYW1lIjoiQ09ERSBYIiwidGltZXN0YW1wIjoxNzcxNTA1MTYxLCJzaWduYXR1cmUiOiJkZmMyZWEzYTdiZjI2NWFjNDlkMTJkOTk4Njk3ZmFhNmMwZTYyMjFmMDEyMjUxYzEwODliN2RjMTgxNzFmNjg0In0=",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "EduPredict: AI-Based Student Dropout Risk Analyzer",
+            "tshirt_sizes": "4 members - L",
+            "food_preference": "4 members - Non veg",
+            "created_at": "2026-02-19T18:16:01.785083",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "178A3890",
+            "user_id": "HFI2611",
+            "team_name": "Cyber Assaulterz",
+            "college_name": "M Kumarasamy College of Engineering",
+            "team_leader_email": "dharunkumarm2005@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "DHARUN KUMAR M",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Arun Sanjeev M S",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Kishore S",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Aswanth K",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiIxNzhBMzg5MCIsInVzZXJfaWQiOiJIRkkyNjExIiwidGVhbV9uYW1lIjoiQ3liZXIgQXNzYXVsdGVyeiIsInRpbWVzdGFtcCI6MTc3MTUwNTE2MSwic2lnbmF0dXJlIjoiYWJlNTk4OTY4NjE3ZDBkNzcyMTg3YmU4NjA1MGI0MzE5YmE4ZjU5ZGIxOGMwZjJmODgyYjI3Zjg3Njg0OWZkOSJ9",
+            "project_domain": "SDG 3 : Good Health and Well Being",
+            "project_title": "IoT and AI based Automatic Accident Detection and nearest ambulance allocation with real - time Hospital Coordination",
+            "tshirt_sizes": "3 Members - M\n1 Members - L",
+            "food_preference": "4 Members - Non - Veg",
+            "created_at": "2026-02-19T18:16:01.978655",
+            "created_by": "bulk_import"
+        },
+        {
+            "ticket_id": "C2146DD7",
+            "user_id": "HFI2612",
+            "team_name": "Hack Score",
+            "college_name": "K. Ramakrishnan College of Engineering",
+            "team_leader_email": "manojaravind1511@gmail.com",
+            "team_size": 4,
+            "team_members": [
+                {
+                    "name": "Manoj Aravind S",
+                    "position": "Team Leader",
+                    "member_id": 1
+                },
+                {
+                    "name": "Dharun Akash R K",
+                    "position": "Member 2",
+                    "member_id": 2
+                },
+                {
+                    "name": "Mohamed Salman T",
+                    "position": "Member 3",
+                    "member_id": 3
+                },
+                {
+                    "name": "Kishore M",
+                    "position": "Member 4",
+                    "member_id": 4
+                }
+            ],
+            "slot": "20 Feb 9:00 AM - 21 Feb 9:00 AM",
+            "event_name": "HACKFEST2K26",
+            "qr_payload": "eyJ0aWNrZXRfaWQiOiJDMjE0NkRENyIsInVzZXJfaWQiOiJIRkkyNjEyIiwidGVhbV9uYW1lIjoiSGFjayBTY29yZSIsInRpbWVzdGFtcCI6MTc3MTUwNTE2Miwic2lnbmF0dXJlIjoiYmM4MTRhOGRhZGZmMWI3ZmU5YzMxZTkzYmE2M2MxODQ4ZGRiNjE4ZGFmNzA4OTk0YzE5OGI4YWM2ZTQwYmQ1ZSJ9",
+            "project_domain": "SDG 4 : Quality Education",
+            "project_title": "Emotion-Adaptive Education System",
+            "tshirt_sizes": "1 member - XL\n1 member - L\n2 members - M",
+            "food_preference": "4 members - Non-Veg",
+            "created_at": "2026-02-19T18:16:02.165653",
+            "created_by": "bulk_import"
         }
     ]
 }

@@ -14,32 +14,41 @@ from utils.json_store import load_json
 
 auth_bp = Blueprint('auth', __name__)
 
-# Admin credentials
+# Hardcoded admin credentials
 ADMIN_USERNAME = "adminmkce"
 ADMIN_PASSWORD = "hackfest-2k26"
 
 
 @auth_bp.route('/login', methods=['GET', 'POST'])
-@auth_bp.route('/login/admin', methods=['GET', 'POST'])
 def login():
-    """Admin login page with authentication."""
-    # If already logged in, go to dashboard
-    if session.get('role') == 'admin':
-        return redirect(url_for('admin.dashboard'))
-    
+    """Admin login page."""
     if request.method == 'POST':
         username = request.form.get('username', '').strip()
         password = request.form.get('password', '').strip()
         
+        # Check hardcoded admin credentials
         if username == ADMIN_USERNAME and password == ADMIN_PASSWORD:
             session['user_id'] = 'admin-001'
-            session['username'] = 'admin'
+            session['username'] = username
             session['role'] = 'admin'
-            flash('Welcome to Admin Dashboard!', 'success')
+            flash('Welcome, Admin!', 'success')
             return redirect(url_for('admin.dashboard'))
-        else:
-            flash('Invalid username or password', 'error')
-            return redirect(url_for('auth.login'))
+        
+        # Also check from JSON (backup)
+        data = load_json('users.json')
+        users = data.get('users', [])
+        
+        for user in users:
+            if user.get('username') == username and user.get('role') == 'admin':
+                if user.get('password_plain') == password:
+                    session['user_id'] = user.get('id')
+                    session['username'] = username
+                    session['role'] = 'admin'
+                    flash('Welcome, Admin!', 'success')
+                    return redirect(url_for('admin.dashboard'))
+        
+        flash('Invalid admin credentials', 'error')
+        return redirect(url_for('auth.login'))
     
     return render_template('login_admin.html')
 

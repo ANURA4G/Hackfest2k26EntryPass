@@ -3,6 +3,13 @@ Flask Application Entry Point
 ==============================
 
 This is the main Flask application file.
+
+Responsibilities:
+- Create and configure the Flask application
+- Register all route blueprints (auth, admin, user, scan)
+- Set up session configuration
+- Define the landing page route
+- Configure static files and templates paths
 """
 
 import os
@@ -33,34 +40,17 @@ app.register_blueprint(scan_bp)
 
 @app.route('/')
 def home():
-    """Landing page route."""
-    return render_template('landing.html')
+    """Landing page route - redirect to admin login."""
+    from flask import redirect, url_for
+    return redirect(url_for('auth.login'))
 
 
 @app.route('/health')
-def health_check():
-    """Health check endpoint for deployment verification."""
-    import sys
-    import os
-    return {
-        "status": "OK",
-        "message": "Event Ticketing App is running",
-        "python_version": sys.version,
-        "working_directory": os.getcwd(),
-        "environment": "production" if os.getenv('FLASK_ENV') == 'production' else "development"
-    }
-
-
-@app.route('/admin')
-def admin_shortcut():
-    """Direct admin access route - requires login."""
-    from flask import redirect, url_for, session
-    if session.get('role') == 'admin':
-        return redirect(url_for('admin.dashboard'))
-    return redirect(url_for('auth.login'))
+def health():
+    """Health check endpoint."""
+    return {"status": "ok"}
 
 
 if __name__ == "__main__":
     # Development server entry point
-    app.run(debug=True)
     app.run(debug=True)

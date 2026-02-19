@@ -62,18 +62,18 @@
     </div>
 
     <!-- Table -->
-    <div class="glass rounded-xl overflow-hidden">
-        <table class="w-full table-dark-custom">
+    <div class="glass rounded-xl" style="overflow-x: auto;">
+        <table class="w-full table-dark-custom" style="min-width: 1100px;">
             <thead>
                 <tr>
-                    <th class="text-left py-4 px-6">Team Name</th>
-                    <th class="text-left py-4 px-6">Team Code</th>
-                    <th class="text-left py-4 px-6">College</th>
-                    <th class="text-left py-4 px-6">Email</th>
-                    <th class="text-left py-4 px-6">Size</th>
-                    <th class="text-left py-4 px-6">Team Members</th>
-                    <th class="text-left py-4 px-6">Status</th>
-                    <th class="text-left py-4 px-6">Actions</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap;">Team Name</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap;">Team Code</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap;">College</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap;">Email</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap;">Size</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap;">Team Members</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap;">Status</th>
+                    <th class="text-left py-3 px-4" style="white-space:nowrap; min-width:200px;">Actions</th>
                 </tr>
             </thead>
             <tbody id="tickets-tbody">
@@ -83,20 +83,20 @@
                     data-team-code="{{ ticket.user_id|lower }}" data-college="{{ ticket.college_name|lower }}"
                     data-email="{{ ticket.team_leader_email|lower }}" data-ticket-id="{{ ticket.ticket_id|lower }}"
                     data-status="{{ ticket.attendance_status|lower }}" data-size="{{ ticket.team_size }}">
-                    <td class="py-4 px-6 font-medium text-white">{{ ticket.team_name }}</td>
-                    <td class="py-4 px-6 font-mono text-sm text-indigo-400 font-bold">{{ ticket.user_id }}</td>
-                    <td class="py-4 px-6 text-sm text-gray-400">{{ ticket.college_name }}</td>
-                    <td class="py-4 px-6 text-sm text-gray-400">{{ ticket.team_leader_email }}</td>
-                    <td class="py-4 px-6 text-sm text-gray-400">{{ ticket.team_size }}</td>
-                    <td class="py-4 px-6 text-sm text-gray-400">
+                    <td class="py-3 px-4 font-medium text-white" style="white-space:nowrap;">{{ ticket.team_name }}</td>
+                    <td class="py-3 px-4 font-mono text-sm text-indigo-400 font-bold" style="white-space:nowrap;">{{ ticket.user_id }}</td>
+                    <td class="py-3 px-4 text-sm text-gray-400" style="max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ ticket.college_name }}</td>
+                    <td class="py-3 px-4 text-sm text-gray-400" style="max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ ticket.team_leader_email }}</td>
+                    <td class="py-3 px-4 text-sm text-gray-400">{{ ticket.team_size }}</td>
+                    <td class="py-3 px-4 text-sm text-gray-400" style="max-width:200px;">
                         {% if ticket.team_members %}
-                        <div class="space-y-1">
+                        <div style="display:flex; flex-direction:column; gap:2px;">
                             {% for member in ticket.team_members %}
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 bg-gray-500 rounded-full"></span>
-                                <span>{{ member.name }}</span>
+                            <div style="display:flex; align-items:center; gap:4px;">
+                                <span style="width:6px;height:6px;background:#6b7280;border-radius:50%;flex-shrink:0;"></span>
+                                <span style="white-space:nowrap;">{{ member.name }}</span>
                                 {% if member.position == 'Team Leader' %}
-                                <span class="text-xs text-indigo-400">(Leader)</span>
+                                <span style="font-size:10px; color:#818cf8;">(L)</span>
                                 {% endif %}
                             </div>
                             {% endfor %}
@@ -105,27 +105,27 @@
                         <span class="text-gray-500">-</span>
                         {% endif %}
                     </td>
-                    <td class="py-4 px-6">
+                    <td class="py-3 px-4" style="white-space:nowrap;">
                         {% if ticket.attendance_status == 'Present' %}
                         <span class="px-2 py-1 rounded-full text-xs badge-success">✓ Attended</span>
                         {% else %}
                         <span class="px-2 py-1 rounded-full text-xs badge-warning">⏳ Pending</span>
                         {% endif %}
                     </td>
-                    <td class="py-4 px-6">
-                        <div class="flex gap-2 flex-wrap">
+                    <td class="py-3 px-4" style="white-space:nowrap; min-width:200px;">
+                        <div style="display:flex; gap:6px; flex-wrap:nowrap; align-items:center;">
                             <a href="/admin/tickets/{{ ticket.ticket_id }}/pdf"
-                                class="px-3 py-1.5 text-xs bg-indigo-500/20 text-indigo-400 rounded hover:bg-indigo-500/30 border border-indigo-500/30"
+                                style="display:inline-block; padding:4px 10px; font-size:12px; background:rgba(99,102,241,0.2); color:#818cf8; border-radius:4px; border:1px solid rgba(99,102,241,0.3); text-decoration:none; white-space:nowrap;"
                                 title="Download PDF">📄 PDF</a>
                             <a href="/admin/tickets/{{ ticket.ticket_id }}/qr"
-                                class="px-3 py-1.5 text-xs bg-purple-500/20 text-purple-400 rounded hover:bg-purple-500/30 border border-purple-500/30"
+                                style="display:inline-block; padding:4px 10px; font-size:12px; background:rgba(168,85,247,0.2); color:#c084fc; border-radius:4px; border:1px solid rgba(168,85,247,0.3); text-decoration:none; white-space:nowrap;"
                                 title="Download QR">📱 QR</a>
                             <form method="POST" action="/admin/tickets/{{ ticket.ticket_id }}/delete"
                                 onsubmit="return confirm('Delete team \'{{ ticket.team_name }}\'? This will remove all associated data.');"
-                                style="display: inline;">
+                                style="display:inline; margin:0; padding:0;">
                                 <button type="submit"
-                                    class="px-3 py-1.5 text-xs bg-red-500/20 text-red-400 rounded hover:bg-red-500/30 border border-red-500/30"
-                                    title="Delete Team">🗑️ Delete</button>
+                                    style="display:inline-block; padding:4px 10px; font-size:12px; background:rgba(239,68,68,0.2); color:#f87171; border-radius:4px; border:1px solid rgba(239,68,68,0.3); cursor:pointer; white-space:nowrap;"
+                                    title="Delete Team">🗑️ Del</button>
                             </form>
                         </div>
                     </td>

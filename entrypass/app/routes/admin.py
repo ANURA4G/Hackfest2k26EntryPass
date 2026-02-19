@@ -324,6 +324,24 @@ def clear_all_teams():
 def attendance():
     """View all attendance records."""
     records = get_attendance_records()
+
+    # Enrich records with present_count and team_size for the template
+    for record in records:
+        members = record.get('member_attendance', [])
+        if members:
+            record.setdefault('present_count', sum(1 for m in members if m.get('status') == 'present'))
+            record.setdefault('team_size', len(members))
+        else:
+            record.setdefault('present_count', 1 if record.get('status') == 'present' else 0)
+            record.setdefault('team_size', 1)
+
+        # Pull team_name from ticket if missing
+        if not record.get('team_name'):
+            ticket = get_ticket_by_id(record.get('ticket_id', ''))
+            if ticket:
+                record['team_name'] = ticket.get('team_name', 'Unknown')
+                record['team_size'] = ticket.get('team_size', record['team_size'])
+
     stats = get_stats()
     return render_template('attendance.html', records=records, stats=stats)
 
