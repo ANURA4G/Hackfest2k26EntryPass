@@ -8,28 +8,48 @@ Data Files Managed:
 - users.json: User accounts (both admin and regular users)
 - tickets.json: All generated tickets with event info
 - attendance.json: Check-in records with timestamps
+
+Vercel Support:
+- Deployed code lives on a read-only filesystem.
+- Writable area is /tmp (persists within a single invocation and
+  may survive across warm invocations of the *same* container).
+- On cold start we copy the seed JSON files from the deployed
+  data/ directory into /tmp/data/ so they become writable.
 """
 
 import os
 import json
+import shutil
 from datetime import datetime
 
-# Path to data directory - improved for serverless
-# Try multiple path resolution strategies
+# ── Resolve the *seed* data directory (read-only on Vercel) ──
 script_dir = os.path.dirname(os.path.abspath(__file__))
 app_dir = os.path.dirname(script_dir)
-DATA_DIR = os.path.join(app_dir, 'data')
+_SEED_DATA_DIR = os.path.join(app_dir, 'data')
 
-# Fallback for serverless environments
-if not os.path.exists(DATA_DIR):
-    # Try alternative paths
-    alt_data_dir = os.path.join(os.getcwd(), 'app', 'data')
-    if os.path.exists(alt_data_dir):
-        DATA_DIR = alt_data_dir
-    else:
-        # Create data directory if it doesn't exist
-        DATA_DIR = os.path.join(app_dir, 'data')
+# Fallback: try alternative paths for the seed directory
+if not os.path.exists(_SEED_DATA_DIR):
+    alt = os.path.join(os.getcwd(), 'app', 'data')
+    if os.path.exists(alt):
+        _SEED_DATA_DIR = alt
+
+# ── Detect Vercel and set up a writable DATA_DIR ─────────────
+_ON_VERCEL = bool(os.environ.get('VERCEL') or os.environ.get('VERCEL_ENV'))
+
+if _ON_VERCEL:
+    DATA_DIR = '/tmp/data'
+    # Copy seed files to /tmp/data on cold start (only if not already there)
+    if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR, exist_ok=True)
+        if os.path.isdir(_SEED_DATA_DIR):
+            for fname in os.listdir(_SEED_DATA_DIR):
+                src = os.path.join(_SEED_DATA_DIR, fname)
+                dst = os.path.join(DATA_DIR, fname)
+                if os.path.isfile(src) and not os.path.exists(dst):
+                    shutil.copy2(src, dst)
+else:
+    DATA_DIR = _SEED_DATA_DIR
+    os.makedirs(DATA_DIR, exist_ok=True)
 
 # Data file names
 USERS_FILE = 'users.json'
