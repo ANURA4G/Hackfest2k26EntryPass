@@ -48,7 +48,7 @@ def load_json(filename: str) -> dict:
         elif filename == TICKETS_FILE:
             return {"tickets": []}
         elif filename == ATTENDANCE_FILE:
-            return {"attendance": []}
+            return {"records": []}
         return {}
     
     try:
@@ -59,8 +59,8 @@ def load_json(filename: str) -> dict:
                 data['users'] = []
             elif filename == TICKETS_FILE and 'tickets' not in data:
                 data['tickets'] = []
-            elif filename == ATTENDANCE_FILE and 'attendance' not in data:
-                data['attendance'] = []
+            elif filename == ATTENDANCE_FILE and 'records' not in data:
+                data['records'] = []
             return data
     except (json.JSONDecodeError, IOError) as e:
         print(f"Error loading {filename}: {e}")
@@ -70,7 +70,7 @@ def load_json(filename: str) -> dict:
         elif filename == TICKETS_FILE:
             return {"tickets": []}
         elif filename == ATTENDANCE_FILE:
-            return {"attendance": []}
+            return {"records": []}
         return {}
 
 
